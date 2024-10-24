@@ -101,12 +101,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Конспект',
                 to: '/docs/intro',
-              },
-              {
-                label: 'Textbook',
-                to: '/textbook/intro',
               },
             ],
           },

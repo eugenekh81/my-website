@@ -1,8 +1,9 @@
-import { Image } from '@site/src/components/Image';
-
+---
+custom_edit_url: null
+hide_table_of_contents: true
 ---
 
-## custom_edit_url: null
+import { Image } from '@site/src/components/Image';
 
 # Веб-технології
 

@@ -3,15 +3,13 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-import TOCInline from '@theme/TOCInline';
 import { Image } from '@site/src/components/Image'
+import TOCInline from '@theme/TOCInline';
+import { CustomTOC } from '@site/src/components/CustomTOC';
 
-<details>
-<summary>Зміст цієї сторінки</summary>
-
-<TOCInline toc={toc} />
-
-</details>
+<CustomTOC>
+  <TOCInline toc={toc} />
+</CustomTOC>
 
 # Зображення
 
@@ -43,10 +41,7 @@ import { Image } from '@site/src/components/Image'
 Якщо в тексті сторінки описується історія цих кошенят, наступного опису буде достатньо.
 
 ```html
-<img
-  src="kittens.jpg"
-  alt="Кошенята"
-/>
+<img src="kittens.jpg" alt="Кошенята" />
 ```
 
 У разі, якщо у нас просто галерея зображень, без будь-якого текстового опису, необхідно уточнити, що саме зображено на малюнку.
@@ -83,10 +78,7 @@ import { Image } from '@site/src/components/Image'
 ```html
 <figure>
   <!-- Довільний графічний контент: фотографія, графік, діаграма тощо -->
-  <img
-    src="адреса зображення"
-    alt="альтернативний текст"
-  />
+  <img src="адреса зображення" alt="альтернативний текст" />
   <figcaption>Текст пояснення, який буде під зображенням</figcaption>
 </figure>
 ```
@@ -121,10 +113,7 @@ https://images.pexels.com/photos/583842/pexels-photo-583842.jpeg
 
 ```html
 <a href="">
-  <img
-    src="images/logo.png"
-    alt="Логотип сайту"
-  />
+  <img src="images/logo.png" alt="Логотип сайту" />
 </a>
 ```
 

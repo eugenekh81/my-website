@@ -3,15 +3,13 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-import TOCInline from '@theme/TOCInline';
 import { Image } from '@site/src/components/Image';
+import TOCInline from '@theme/TOCInline';
+import { CustomTOC } from '@site/src/components/CustomTOC';
 
-<details>
-<summary>Зміст цієї сторінки</summary>
-
-<TOCInline toc={toc} />
-
-</details>
+<CustomTOC>
+  <TOCInline toc={toc} />
+</CustomTOC>
 
 # Скелет HTML-документа
 
@@ -139,10 +137,7 @@ HTML-документ складається з «дерева» тегів. Д�
 <html lang="uk">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Вивчення основ HTML5 для новачків"
-    />
+    <meta name="description" content="Вивчення основ HTML5 для новачків" />
     <title>HTML5 - це просто!</title>
   </head>
   <body>

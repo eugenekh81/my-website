@@ -3,15 +3,13 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-import TOCInline from '@theme/TOCInline';
 import { Image } from '@site/src/components/Image';
+import TOCInline from '@theme/TOCInline';
+import { CustomTOC } from '@site/src/components/CustomTOC';
 
-<details>
-<summary>Зміст цієї сторінки</summary>
-
-<TOCInline toc={toc} />
-
-</details>
+<CustomTOC>
+  <TOCInline toc={toc} />
+</CustomTOC>
 
 # Семантика
 

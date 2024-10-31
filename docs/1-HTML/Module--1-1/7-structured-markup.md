@@ -3,16 +3,14 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-import TOCInline from '@theme/TOCInline';
 import { Image } from '@site/src/components/Image';
 import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
+import TOCInline from '@theme/TOCInline';
+import { CustomTOC } from '@site/src/components/CustomTOC';
 
-<details>
-<summary>Зміст цієї сторінки</summary>
-
-<TOCInline toc={toc} />
-
-</details>
+<CustomTOC>
+  <TOCInline toc={toc} />
+</CustomTOC>
 
 # Структурна розмітка
 
@@ -148,10 +146,7 @@ import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
 ```html
 <article>
   <h1>Солодкий пиріжок</h1>
-  <img
-    src="посилання на зображення пиріжка"
-    alt="пиріжок"
-  />
+  <img src="посилання на зображення пиріжка" alt="пиріжок" />
   <p>
     Дуже смачний печений пиріжок з різними наповнювачами: вишнею, персиком
     сливою або полуницею.

@@ -27,6 +27,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'HTML',
+      collapsed: false,
       items: [
         {
           type: 'category',
@@ -86,6 +87,56 @@ const sidebars = {
                   type: 'doc',
                   id: 'HTML/Module--1-1/code-style-guide',
                   label: 'Оформлення коду',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 2',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--1-2/tables',
+                  label: 'Таблиці',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--1-2/text-markup',
+                  label: 'Розмітка тексту',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--1-2/html-symbols',
+                  label: 'Символьні підстановки',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--1-2/video-audio',
+                  label: 'Відео та аудіо',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 2',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 3',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-1/css-intro',
+
+                  label: 'Вступ до CSS',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-1/selectors',
+
+                  label: 'Селектори',
                 },
               ],
             },

@@ -4,13 +4,11 @@ custom_edit_url: null
 ---
 
 import TOCInline from '@theme/TOCInline';
+import { CustomTOC } from '@site/src/components/CustomTOC';
 
-<details>
-<summary>Зміст цієї сторінки</summary>
-
-<TOCInline toc={toc} />
-
-</details>
+<CustomTOC>
+  <TOCInline toc={toc} />
+</CustomTOC>
 
 # Теги та атрибути
 
@@ -55,21 +53,11 @@ import TOCInline from '@theme/TOCInline';
 Атрибути записуються всередині відкриваючого тегу, а їх значення розташовуються всередині подвійних лапок. Декілька атрибутів розділяються пробілом.
 
 ```html
-<a
-  href="https://google.com"
-  class="link"
-  >...</a
->
+<a href="https://google.com" class="link">...</a>
 
-<img
-  src="cat.jpg"
-  alt="cute cat"
-/>
+<img src="cat.jpg" alt="cute cat" />
 
-<input
-  type="text"
-  name="user_name"
-/>
+<input type="text" name="user_name" />
 
 <button type="submit">...</button>
 
@@ -79,11 +67,7 @@ import TOCInline from '@theme/TOCInline';
 Розглянемо деякі атрибути тегу `<a>`:
 
 ```html
-<a
-  href="http://google.com"
-  target="_blank"
-  title="Пошукова система Google"
->
+<a href="http://google.com" target="_blank" title="Пошукова система Google">
   Google.com
 </a>
 ```
@@ -137,10 +121,7 @@ import TOCInline from '@theme/TOCInline';
 <input type="text" />
 
 <!-- Зображення -->
-<img
-  src="cat.jpg"
-  alt="cool cat"
-/>
+<img src="cat.jpg" alt="cool cat" />
 ```
 
 :::tip[ЦІКАВО]

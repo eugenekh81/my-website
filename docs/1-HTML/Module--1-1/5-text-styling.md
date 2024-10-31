@@ -3,16 +3,14 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-import TOCInline from '@theme/TOCInline';
 import { Image } from '@site/src/components/Image';
 import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
+import TOCInline from '@theme/TOCInline';
+import { CustomTOC } from '@site/src/components/CustomTOC';
 
-<details>
-<summary>Зміст цієї сторінки</summary>
-
-<TOCInline toc={toc} />
-
-</details>
+<CustomTOC>
+  <TOCInline toc={toc} />
+</CustomTOC>
 
 # Розмітка тексту
 
@@ -149,11 +147,7 @@ import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
 <a href="https://www.facebook.com/">Facebook</a>
 
 <!-- Посилання на зовнішній ресурс, відкриється у новій вкладці -->
-<a
-  href="https://www.facebook.com/"
-  target="_blank"
-  rel="noreferrer noopener"
->
+<a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
   Facebook
 </a>
 ```
@@ -166,11 +160,7 @@ import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
 
 ```html
 <!-- Посилання на завантаження файлу -->
-<a
-  href="/путь/к/cv.pdf"
-  download
-  >Завантажити резюме</a
->
+<a href="/путь/к/cv.pdf" download>Завантажити резюме</a>
 ```
 
 ### Спеціальні значення `href`
@@ -214,10 +204,7 @@ import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
 <html lang="uk">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Інструкція по експлуатації пиріжків"
-    />
+    <meta name="description" content="Інструкція по експлуатації пиріжків" />
     <title>Пиріжки - це смачно!</title>
   </head>
   <body>

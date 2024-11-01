@@ -150,13 +150,13 @@ const sidebars = {
 
                     label: 'Робота з кольором',
                     },
-                    /*
-                {
-                  type: 'doc',
-                  id: 'HTML/Module--2-1/cascade',
+                    {
+                      type: 'doc',
+                      id: 'HTML/Module--2-1/cascade',
 
-                  label: 'Каскад стилів',
-                },
+                      label: 'Каскад стилів',
+                      },
+                      /*
                 {
                   type: 'doc',
                   id: 'HTML/Module--2-1/css-variables',

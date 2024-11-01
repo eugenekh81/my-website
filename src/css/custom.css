@@ -32,3 +32,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+summary p {
+  font-weight: 600
+}

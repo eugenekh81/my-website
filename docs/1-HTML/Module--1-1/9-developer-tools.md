@@ -5,6 +5,9 @@ custom_edit_url: null
 
 import { Image } from '@site/src/components/Image';
 import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
+import { CustomTOC } from '@site/src/components/CustomTOC';
+
+<CustomTOC toc={toc} />
 
 # Інструменти розробника
 

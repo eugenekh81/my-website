@@ -6,6 +6,10 @@
   flex-direction: column;
 
   border-radius: var(--ifm-global-radius);
+
+  & ul {
+    list-style: none !important;
+  }
 }
 
 .button {
@@ -21,6 +25,8 @@
 
   border: none;
   border-radius: var(--ifm-global-radius);
+
+  cursor: pointer;
 
   // &::after,
   & .icon {
@@ -50,7 +56,7 @@
 }
 
 .TOCContainer {
-  display: flex;
+  display: block;
 
   height: 0;
 
@@ -61,7 +67,11 @@
   transition: height 311ms ease-in-out;
 
   & ul {
-    list-style-type: none;
+    list-style: none;
+
+    &:first-child {
+      border-top: 1px solid var(--ifm-menu-color-active);
+    }
 
     li:last-child ul li:last-child {
       margin-bottom: 16px;

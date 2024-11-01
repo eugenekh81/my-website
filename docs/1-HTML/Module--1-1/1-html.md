@@ -4,12 +4,9 @@ hide_table_of_contents: true
 ---
 
 import { Image } from '@site/src/components/Image';
-import TOCInline from '@theme/TOCInline';
 import { CustomTOC } from '@site/src/components/CustomTOC';
 
-<CustomTOC>
-  <TOCInline toc={toc} />
-</CustomTOC>
+<CustomTOC toc={toc} />
 
 # Веб-технології
 

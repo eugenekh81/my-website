@@ -5,12 +5,9 @@ custom_edit_url: null
 
 import { Image } from '@site/src/components/Image';
 import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
-import TOCInline from '@theme/TOCInline';
 import { CustomTOC } from '@site/src/components/CustomTOC';
 
-<CustomTOC>
-  <TOCInline toc={toc} />
-</CustomTOC>
+<CustomTOC toc={toc} />
 
 # Розмітка тексту
 

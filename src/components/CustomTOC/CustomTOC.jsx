@@ -1,11 +1,10 @@
 import React, { useRef, useState } from 'react';
 import styles from './CustomTOC.module.scss';
+import TOCInline from '@theme/TOCInline';
 import cn from 'classnames';
 
-export const CustomTOC = ({ children }) => {
-  const { toc } = children.props;
-
-  if (toc.length === 0) return;
+export const CustomTOC = ({ toc }) => {
+  if (toc.length === 0) return null;
 
   const [expanded, setExpanded] = useState(false);
 
@@ -51,9 +50,8 @@ export const CustomTOC = ({ children }) => {
   return (
     <div
       className={cn(styles.customTOC, { [styles.expanded]: expanded })}
-      onClick={() => handleExpand()}
     >
-      <button type='button' className={styles.button} ref={TOCButton}>
+      <button type='button' className={styles.button} ref={TOCButton} onClick={() => handleExpand()}>
         Зміст цієї сторінки
         <svg
           className={styles.icon}
@@ -76,7 +74,7 @@ export const CustomTOC = ({ children }) => {
         }}
         ref={TOCContainer}
       >
-        {children}
+        <TOCInline toc={toc} />
       </div>
     </div>
   );

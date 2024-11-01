@@ -138,6 +138,61 @@ const sidebars = {
 
                   label: 'Селектори',
                 },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-1/pseudoclasses',
+
+                  label: 'Псевдокласи стану',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-1/color',
+
+                  label: 'Робота з кольором',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-1/cascade',
+
+                  label: 'Каскад стилів',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-1/css-variables',
+
+                  label: 'CSS-змінні',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 4: Текст та шрифт',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-2/text-styling',
+
+                  label: 'Оформлення тексту',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-2/text-props',
+
+                  label: 'Властивості шрифту',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-2/text-pseudoelements',
+
+                  label: 'Псевдоелементи тексту',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-2/unique-fonts',
+
+                  label: 'Нестандартні шрифти',
+                },
+
               ],
             },
           ],

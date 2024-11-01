@@ -33,7 +33,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: ['docusaurus-plugin-sass', 'docusaurus-plugin-image-zoom'],
   presets: [
     [
       'classic',
@@ -73,7 +73,6 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         // title: 'My Textbook',
@@ -145,6 +144,16 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      zoom: {
+        selector: '.markdown img',
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          background: {
+            light: 'rgb(255, 255, 255)',
+            dark: 'rgb(50, 50, 50)'
+          }
+        }
+      }
     }),
 };
 

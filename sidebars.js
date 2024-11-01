@@ -143,20 +143,20 @@ const sidebars = {
                   id: 'HTML/Module--2-1/pseudoclasses',
 
                   label: 'Псевдокласи стану',
-                  },
-                  {
-                    type: 'doc',
-                    id: 'HTML/Module--2-1/color',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-1/color',
 
-                    label: 'Робота з кольором',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'HTML/Module--2-1/cascade',
+                  label: 'Робота з кольором',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2-1/cascade',
 
-                      label: 'Каскад стилів',
-                      },
-                      /*
+                  label: 'Каскад стилів',
+                },
+
                 {
                   type: 'doc',
                   id: 'HTML/Module--2-1/css-variables',
@@ -165,8 +165,6 @@ const sidebars = {
                 },
               ],
             },
-            */
-            /*
             {
               type: 'category',
               label: 'Заняття 4: Текст та шрифт',
@@ -195,8 +193,6 @@ const sidebars = {
 
                   label: 'Нестандартні шрифти',
                 },
-
-                */
               ],
             },
           ],

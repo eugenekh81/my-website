@@ -138,19 +138,19 @@ const sidebars = {
 
                   label: 'Селектори',
                 },
-                /*
                 {
                   type: 'doc',
                   id: 'HTML/Module--2-1/pseudoclasses',
 
                   label: 'Псевдокласи стану',
-                },
-                {
-                  type: 'doc',
-                  id: 'HTML/Module--2-1/color',
+                  },
+                  {
+                    type: 'doc',
+                    id: 'HTML/Module--2-1/color',
 
-                  label: 'Робота з кольором',
-                },
+                    label: 'Робота з кольором',
+                    },
+                    /*
                 {
                   type: 'doc',
                   id: 'HTML/Module--2-1/cascade',

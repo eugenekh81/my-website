@@ -192,7 +192,84 @@ const sidebars = {
 
                   label: 'Нестандартні шрифти',
                 },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 8',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 15: Адаптивна верстка',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/media-queries',
 
+                  label: 'Медіа-запити',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/viewport-metatag',
+
+                  label: 'Метатег viewport',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/dev-tools',
+
+                  label: 'Інструменти розробника',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/markup-types',
+
+                  label: 'Типи верстки',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/mobile-first-strategy',
+
+                  label: 'Стратегія Mobile First',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 16: Апаптивна графіка',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/pixel-density',
+
+                  label: 'Щільність пікселів',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/responsive-images',
+
+                  label: 'Респонсивні зображення',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/responsive-background-images',
+
+                  label: 'Респонсивні фонові зображення',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/responsive-img-element',
+
+                  label: 'Респонсивний елемент <img>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/picture-element',
+
+                  label: 'Елемент <picture>',
+                },
               ],
             },
           ],

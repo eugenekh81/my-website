@@ -198,6 +198,30 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Модуль 3',
+          items: [
+            {
+              type: 'doc',
+                  id: 'HTML/Module--3/Lesson--5/box-model',
+
+                  label: 'Блокова модель',
+            },
+            {
+              type: 'doc',
+                  id: 'HTML/Module--3/Lesson--5/element-geometry',
+
+                  label: 'Геометрія елемента',
+            },
+            {
+              type: 'doc',
+                  id: 'HTML/Module--3/Lesson--5/element-types',
+
+                  label: 'Типи елемента',
+            },
+          ]
+        },
+        {
+          type: 'category',
           label: 'Модуль 8',
           items: [
             {
@@ -238,7 +262,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Заняття 16: Апаптивна графіка',
+              label: 'Заняття 16: Адаптивна графіка',
               items: [
                 {
                   type: 'doc',

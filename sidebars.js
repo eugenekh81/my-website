@@ -237,17 +237,133 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'HTML/Module--3/Lesson--6/main-concepts',
-                  label: 'Основні концепції'
+                  label: 'Основні концепції',
                 },
                 {
                   type: 'doc',
                   id: 'HTML/Module--3/Lesson--6/container-properties',
-                  label: 'Властивості контейнера'
+                  label: 'Властивості контейнера',
                 },
                 {
                   type: 'doc',
                   id: 'HTML/Module--3/Lesson--6/element-properties',
-                  label: 'Властивості елемента'
+                  label: 'Властивості елемента',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 7',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 13: Методологія БЕМ',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/css-methodologies',
+
+                  label: 'CSS-методології',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/BEM-methodolody',
+
+                  label: 'Методологія BEM',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/block',
+
+                  label: 'Блок',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/element',
+
+                  label: 'Елемент',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/modifier',
+
+                  label: 'Модифікатор',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/mix',
+
+                  label: 'Мікс',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/selectors',
+
+                  label: 'Селектори',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/goods-section',
+
+                  label: 'Секція товарів',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 14: Препроцесор SASS',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/preprocessors',
+                  label: 'Препроцесори',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/variables',
+                  label: 'Змінні',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/nested-rules',
+                  label: 'Вкладені правила',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/math-operations',
+                  label: 'Арифметичні операції',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/import',
+                  label: 'Директива @import',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/extend',
+                  label: 'Директива @extend',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/mixin',
+                  label: 'Директива @mixin',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/each',
+                  label: 'Директива @each',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/maps',
+                  label: 'Мапи (словники)',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/vendor-prefixes',
+                  label: 'Вендорні префікси',
                 },
               ],
             },

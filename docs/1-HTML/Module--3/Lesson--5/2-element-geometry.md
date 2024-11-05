@@ -53,7 +53,7 @@ padding-left: 30px;
 
 <CodePenSnippet src='https://codepen.io/goit-academy/embed/mdEJYPN?height=265&theme-id=default&default-tab=css,result' />
 
-::tip[Корисно]
+:::tip[Корисно]
 У прикладі властивості рамки не вказані явно, але вона все одно є. За замовчуванням її ширина дорівнює 0px і вона бере участь в побудові геометрії елемента, тому можна задати поле між нею і контентом.
 :::
 
@@ -118,24 +118,15 @@ margin-left: 30px;
 Задамо верхньому блокові нижній відступ `20px`, а нижньому блокові верхній відступ `40px`. Внаслідок схлопування, відступ між ними буде `40px`, тому що вибирається більший з двох.
 
 ```html
-.box {
-  width: 200px;
-  height: 100px;
-}
-
-.top {
-  <!-- highlight-start -->
-  margin-bottom: 20px;
-  <!-- highlight-end -->
-  background-color: teal;
-}
-
-.bottom {
-  <!-- highlight-start -->
-  margin-top: 40px;
-  <!-- highlight-end -->
-  background-color: palevioletred;
-}
+.box { width: 200px; height: 100px; } .top {
+<!-- highlight-start -->
+margin-bottom: 20px;
+<!-- highlight-end -->
+background-color: teal; } .bottom {
+<!-- highlight-start -->
+margin-top: 40px;
+<!-- highlight-end -->
+background-color: palevioletred; }
 ```
 
 ### Випадання вертикальних відступів
@@ -169,6 +160,7 @@ margin-left: 30px;
 
 :::danger[Увага]
 Верхні і нижні відступи на межі зіткнення з блоком-батьком немов пробивають його і випадають назовні - це одна з найчастіших помилок верстки. Робіть відступи тільки між двома сусідніми елементами.
+:::
 
 ### Властивість `border`
 
@@ -199,6 +191,7 @@ border-color: колір;
 ```
 
 ### Індивідуальні рамки
+
 Можна задати індивідуальні стилі рамці з кожної сторони елемента. Формат імені властивості простий - `border-сторона-властивість: значення`.
 
 ```css
@@ -226,6 +219,7 @@ border-color: колір;
 ```
 
 ### Закруглена рамка
+
 Для того щоб закруглити всі кути рамки, існує збірна властивість `border-radius`. Значенням можуть бути як абсолютні, так і відносні одиниці.
 
 <CodePenSnippet src='https://codepen.io/goit-academy/embed/bGedXjb?height=265&theme-id=default&default-tab=css,result' />
@@ -245,4 +239,3 @@ border-bottom-right-radius: значення;
 /* нижній лівий кут */
 border-bottom-left-radius: значення;
 ```
-

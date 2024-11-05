@@ -201,24 +201,57 @@ const sidebars = {
           label: 'Модуль 3',
           items: [
             {
-              type: 'doc',
+              type: 'category',
+              label: 'Заняття 5: Блокова модель',
+              items: [
+                {
+                  type: 'doc',
                   id: 'HTML/Module--3/Lesson--5/box-model',
 
                   label: 'Блокова модель',
-            },
-            {
-              type: 'doc',
+                },
+                {
+                  type: 'doc',
                   id: 'HTML/Module--3/Lesson--5/element-geometry',
 
                   label: 'Геометрія елемента',
-            },
-            {
-              type: 'doc',
+                },
+                {
+                  type: 'doc',
                   id: 'HTML/Module--3/Lesson--5/element-types',
 
                   label: 'Типи елемента',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--5/structural-pseudoclasses',
+
+                  label: 'Структурні псевдокласи',
+                },
+              ],
             },
-          ]
+            {
+              type: 'category',
+              label: 'Заняття 6: Flexbox',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--6/main-concepts',
+                  label: 'Основні концепції'
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--6/container-properties',
+                  label: 'Властивості контейнера'
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--6/element-properties',
+                  label: 'Властивості елемента'
+                },
+              ],
+            },
+          ],
         },
         {
           type: 'category',

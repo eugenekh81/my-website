@@ -249,7 +249,9 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
   /* highlight-end */
 }
 ```
+
 :::tip[Цікаво]
 Для того щоб це все оживити, потрібна мова програмування **`JavaScript`**. За певної події можна буде динамічно додавати і видаляти класи в елементів. Нижче наведений повністю робочий приклад, натискайте на посилання і буде відображатися відповідна панель.
+:::
 
 <CodePenSnippet src='https://codepen.io/goit-academy/embed/NWrGyYb?height=265&theme-id=default&default-tab=result' />

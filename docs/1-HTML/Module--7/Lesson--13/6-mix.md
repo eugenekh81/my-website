@@ -1,0 +1,55 @@
+---
+custom_edit_url: null
+hide_table_of_contents: true
+---
+
+import { Image } from '@site/src/components/Image';
+import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
+import { CustomTOC } from '@site/src/components/CustomTOC';
+
+<CustomTOC toc={toc} />
+
+# Мікс
+
+**Мікси (міксування, суміш)** - комбінування декількох класів блоку та елемента в одному тезі. Тобто це можливість зробити один блок елементом іншого блоку. Такий підхід дозволяє додати деякі стилі, наприклад зовнішню геометрію або позиціонування, необхідні тільки у певному місці.
+
+```html
+<header class="page-header">
+  <a class="logo" href="">Технокряк</a>
+  <ul class="nav">
+    ...
+  </ul>
+</header>
+
+<footer class="page-footer">
+  <a class="logo" href="">Технокряк</a>
+</footer>
+```
+
+Наприклад, для блоку `logo`, тільки всередині блоку `page-header`, необхідний зовнішній правий відступ `50px`, щоб відсунути навігацію. Можна створити клас-модифікатор `logo--header` або `logo--margin-right`, але виглядає це вкрай сумнівно, особливо імена класів. Клас-модифікатор використовується для зміни зовнішнього вигляду або поведінки блоку, а не для встановлення йому зовнішньої геометрії.
+
+У таких ситуаціях використовуються мікси. Ім'я класу складається з імен блоку батька і блоку нащадка за схемою `батько__нащадок`. Зробимо блок `logo` елементом блоку `page-header`, додавши ще один клас-мікс `page-header__logo`.
+
+```html
+<header class="page-header">
+  <!-- Це і є мікс. В цьому місці блок logo став ще й елементом page-header -->
+  <a class="logo page-header__logo" href="">Технокряк</a>
+  <ul class="nav">
+    ...
+  </ul>
+</header>
+
+<footer class="page-footer">
+  <a class="logo" href="">Технокряк</a>
+</footer>
+```
+
+Клас `logo` буде містити всі базові стилі, а цьому класові точково задаємо зовнішню геометрію логотипу в шапці.
+
+```css
+.page-header__logo {
+  margin-right: 50px;
+}
+```
+<CodePenSnippet src='https://codepen.io/goit-academy/embed/YzGWWJQ?height=265&theme-id=dark&default-tab=result' />
+

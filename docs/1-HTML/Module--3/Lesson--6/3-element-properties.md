@@ -2,7 +2,6 @@
 custom_edit_url: null
 hide_table_of_contents: true
 ---
-
 import { Image } from '@site/src/components/Image';
 import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
 import { CustomTOC } from '@site/src/components/CustomTOC';
@@ -13,7 +12,7 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 
 **Flex-елементи** - це діти flex-контейнера, елементи першого рівня вкладеності. Flex-елементи (далі просто `елементи`) перестають підкорятися стандартному потоку документа, втрачають свій тип (блоковий, рядковий тощо) і дотримуються правил позиціонування Flexbox-моделі.
 
-  <Image src='/img/HTML/Module--3-2/flex-items.svg' alt='Флекс елементи' />
+<Image src='/img/HTML/Module--3-2/flex-items.svg' alt='Флекс елементи' />
 
 ## Властивість `flex-basis`
 
@@ -38,7 +37,7 @@ flex-grow: частка
 
 За замовчуванню у всіх елементів встановлено значення `0`, тобто елементи не намагаються зайняти додаткове вільне місце, навіть якщо таке є. Від'ємні значення задавати не можна.
 
-  <Image src='/img/HTML/Module--3-2/flex-grow.svg' alt='Властивість flex-grow' />
+<Image src='/img/HTML/Module--3-2/flex-grow.svg' alt='Властивість flex-grow' />
 
 Наприклад, якщо у всіх елементів встановлено однакове значення цієї властивості, то вони займуть однакову кількість місця в контейнері. А ось, якщо всім задати значення `1`, а одному елементу `2`, то він спробує зайняти в два рази більше місця, ніж будь-який інший елемент.
 
@@ -91,7 +90,7 @@ flex-shrink: частка
 align-self: auto | flex-start | flex-end | center | baseline | stretch
 ```
 
-  <Image src='/img/HTML/Module--3-2/align-self.svg' alt='Властивість align-self' />
+<Image src='/img/HTML/Module--3-2/align-self.svg' alt='Властивість align-self' />
 
 Повернемося до прикладу картки із зображенням і контентом. Для вирішення проблеми вертикального розтягування зображення ми використовували властивість `align-items` у контейнера. Властивість `align-self` дозволяє вирішити цю проблему точковіше, перевизначивши значення `align-items` тільки для зображення.
 
@@ -107,11 +106,11 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch
 
 За замовчуванням елементи розташовуються у тому порядку, в якому вони вказані в HTML-файлі. Використовуючи властивість `order` можна візуально змінити порядок розташування елементів вздовж головної осі. При цьому, в HTML-коді нічого не зміниться.
 
-```
-# За замовчуванням у всіх елементів встановлено значення 0
-order: позиція
+```css
+/* За замовчуванням у всіх елементів встановлено значення 0 */
+order: позиція;
 ```
 
 Ця властивість застосовується не часто через те, що порушує зв'язок між візуальним порядком елементів і тим, як їх бачить браузер та асистивні технології.
 
-  <Image src='/img/HTML/Module--3-2/flex-order.svg' alt='Властивість flex-order' />
+<Image src='/img/HTML/Module--3-2/flex-order.svg' alt='Властивість flex-order' />

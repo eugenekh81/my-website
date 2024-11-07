@@ -1,8 +1,7 @@
 ---
 hide_table_of_contents: true
-custom_edit_url: null
 ---
-
+import CodeBlock from '@theme/CodeBlock';
 import { CustomTOC } from '@site/src/components/CustomTOC';
 
 <CustomTOC toc={toc} />
@@ -14,7 +13,7 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 Для виділення тегів серед тексту документа використовуються кутові дужки, в яких вказується ім'я тегу і його атрибути.
 
 ```html
-  <ім'я_тегу>...</ім'я_тегу>
+  <tag>...</tag>
 ```
 
 Відкриваючий тег вказує, де починається елемент, закриваючий - де закінчується. Закриваючий тег утворюється за допомогою додавання слеша (`/`) перед іменем тегу. Між відкриваючим і закриваючим тегами знаходиться вміст тегу - контент.

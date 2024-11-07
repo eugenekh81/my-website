@@ -1,5 +1,4 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
 
@@ -65,24 +64,23 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .section {
-      /* highlight-start */
-      border-top: 1px solid tomato;
-      border-bottom: 1px solid tomato;
-      /* highlight-end */
-      padding: 20px;
-    }
+```css title="main.css"
+.section {
+  /* highlight-start */
+  border-top: 1px solid tomato;
+  border-bottom: 1px solid tomato;
+  /* highlight-end */
+  padding: 20px;
+}
 
-    .header {
-      /* highlight-start */
-      border-top: 1px solid green;
-      border-bottom: 1px solid green;
-      /* highlight-end */
-      min-height: 80px;
-    }
-
-  ```
+.header {
+  /* highlight-start */
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
+  /* highlight-end */
+  min-height: 80px;
+}
+```
 
   </TabItem>
 

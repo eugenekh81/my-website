@@ -20,10 +20,13 @@ export const CustomTOC = ({ toc }) => {
     const height = getComputedStyle(TOC).height;
 
     if (expanded) {
+      TOCButton.current.style.pointerEvents = 'none';
       TOCContainer.current.style.height = height;
       TOCButton.current.style.borderBottomLeftRadius = '0';
       TOCButton.current.style.borderBottomRightRadius = '0';
     } else {
+      TOCButton.current.style.pointerEvents = 'none';
+
       TOCContainer.current.style.height = '0px';
       TOCContainer.current.style.overflow = 'hidden';
 
@@ -34,12 +37,16 @@ export const CustomTOC = ({ toc }) => {
     setTimeout(() => {
       if (expanded) {
         if (TOCButton.current) {
+                TOCButton.current.style.pointerEvents = 'all';
+
           TOCContainer.current.style.overflow = 'visible';
           TOCButton.current.style.borderBottomLeftRadius = '0';
           TOCButton.current.style.borderBottomRightRadius = '0';
         }
       } else {
         if (TOCButton.current) {
+                TOCButton.current.style.pointerEvents = 'all';
+
           TOCButton.current.style.borderBottomLeftRadius = '0.4rem';
           TOCButton.current.style.borderBottomRightRadius = '0.4rem';
         }
@@ -48,10 +55,13 @@ export const CustomTOC = ({ toc }) => {
   }
 
   return (
-    <div
-      className={cn(styles.customTOC, { [styles.expanded]: expanded })}
-    >
-      <button type='button' className={styles.button} ref={TOCButton} onClick={() => handleExpand()}>
+    <div className={cn(styles.customTOC, { [styles.expanded]: expanded })}>
+      <button
+        type='button'
+        className={styles.button}
+        ref={TOCButton}
+        onClick={() => handleExpand()}
+      >
         Зміст цієї сторінки
         <svg
           className={styles.icon}

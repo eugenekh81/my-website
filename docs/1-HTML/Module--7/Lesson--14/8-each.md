@@ -1,5 +1,4 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
 
@@ -40,7 +39,6 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 .turtle-icon {
   background-image: url('../images/turtle.png');
 }
-
 ```
 
 Використовуючи директиву `@each`, можемо досягнути такого самого результату, записавши наступний Sass-код, який буде скомпільований в CSS з попереднього прикладу.

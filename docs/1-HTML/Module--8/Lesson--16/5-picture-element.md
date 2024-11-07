@@ -1,7 +1,7 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
+
 import { Image } from '@site/src/components/Image';
 import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
 import { CustomTOC } from '@site/src/components/CustomTOC';
@@ -47,7 +47,6 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 ```
 
 Всі варіанти доступних зображень перелічуються в тегах `<source>`, які будуть послідовно оброблятися браузером.
-
 
 :::tip[Корисно]
 Для того щоб швидко і зручно конвертувати зображення у формат `webp`, можна використовувати онлайн-інструменти, наприклад [**squoosh.app**](https://squoosh.app/).

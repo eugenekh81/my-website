@@ -1,5 +1,4 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
 
@@ -19,19 +18,19 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 <Tabs>
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .section {
-      width: 100%;
-    }
+```css title="main.css"
+.section {
+  width: 100%;
+}
 
-    .section .title {
-      color: red;
-    }
+.section .title {
+  color: red;
+}
 
-    .section .text {
-      font-size: 14px;
-    }
-  ```
+.section .text {
+  font-size: 14px;
+}
+```
 
   </TabItem>
   <TabItem value="scss" label="SCSS" default>
@@ -62,19 +61,19 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 <Tabs>
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .section {
-      width: 100%;
-    }
+```css title="main.css"
+.section {
+  width: 100%;
+}
 
-    .section__title {
-      color: red;
-    }
+.section__title {
+  color: red;
+}
 
-    .section__text {
-      font-size: 14px;
-    }
-  ```
+.section__text {
+  font-size: 14px;
+}
+```
 
   </TabItem>
   <TabItem value="scss" label="SCSS" default>
@@ -101,19 +100,19 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 <Tabs>
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .link {
-      color: black;
-    }
+```css title="main.css"
+.link {
+  color: black;
+}
 
-    .link:hover {
-      color: red;
-    }
+.link:hover {
+  color: red;
+}
 
-    .link:focus {
-      color: red;
-    }
-  ```
+.link:focus {
+  color: red;
+}
+```
 
   </TabItem>
   <TabItem value="scss" label="SCSS" default>
@@ -140,16 +139,16 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 <Tabs>
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .link {
-      color: black;
+```css title="main.css"
+.link {
+  color: black;
 
-      &:hover,
-      &:focus {
-        color: red;
-      }
-    }
-  ```
+  &:hover,
+  &:focus {
+    color: red;
+  }
+}
+```
 
   </TabItem>
   <TabItem value="scss" label="SCSS" default>
@@ -170,7 +169,6 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 
 ## Правила вкладеності
 
-
 кладеність селекторів - це чудовий спосіб заощадити час і спростити підтримку, але надмірна вкладеність гарантовано викличе проблеми з читабельністю коду.
 
 Уявімо наступну розмітку кнопки з іконкою і текстом.
@@ -187,37 +185,37 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 <Tabs>
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .button {
-      color: red;
-    }
+```css title="main.css"
+.button {
+  color: red;
+}
 
-    .button:hover {
-      color: blue;
-    }
+.button:hover {
+  color: blue;
+}
 
-    .button__icon {
-      width: 20px;
-      height: 20px;
-    }
+.button__icon {
+  width: 20px;
+  height: 20px;
+}
 
-    .button__icon:hover {
-      width: 50px;
-      height: 50px;
-    }
+.button__icon:hover {
+  width: 50px;
+  height: 50px;
+}
 
-    .button__label {
-      font-size: 16px;
-    }
+.button__label {
+  font-size: 16px;
+}
 
-    .button:hover .button__icon {
-      background-color: teal;
-    }
+.button:hover .button__icon {
+  background-color: teal;
+}
 
-    .button:hover .button__label {
-      font-size: 20px;
-    }
-  ```
+.button:hover .button__label {
+  font-size: 20px;
+}
+```
 
   </TabItem>
   <TabItem value="scss" label="SCSS" default>
@@ -264,37 +262,37 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 <Tabs>
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .button {
-      color: red;
-    }
+```css title="main.css"
+.button {
+  color: red;
+}
 
-    .button:hover {
-      color: blue;
-    }
+.button:hover {
+  color: blue;
+}
 
-    .button__icon {
-      width: 20px;
-      height: 20px;
-    }
+.button__icon {
+  width: 20px;
+  height: 20px;
+}
 
-    .button__icon:hover {
-      width: 50px;
-      height: 50px;
-    }
+.button__icon:hover {
+  width: 50px;
+  height: 50px;
+}
 
-    .button__label {
-      font-size: 16px;
-    }
+.button__label {
+  font-size: 16px;
+}
 
-    .button:hover .button__icon {
-      background-color: teal;
-    }
+.button:hover .button__icon {
+  background-color: teal;
+}
 
-    .button:hover .button__label {
-      font-size: 20px;
-    }
-  ```
+.button:hover .button__label {
+  font-size: 20px;
+}
+```
 
   </TabItem>
   <TabItem value="scss" label="SCSS" default>

@@ -29,6 +29,7 @@ const sidebars = {
       label: 'HTML',
       collapsed: false,
       items: [
+        // 1
         {
           type: 'category',
           label: 'Модуль 1',
@@ -118,6 +119,7 @@ const sidebars = {
             },
           ],
         },
+        // 2
         {
           type: 'category',
           label: 'Модуль 2',
@@ -196,6 +198,7 @@ const sidebars = {
             },
           ],
         },
+        // 3
         {
           type: 'category',
           label: 'Модуль 3',
@@ -253,6 +256,87 @@ const sidebars = {
             },
           ],
         },
+        // 4
+        {
+          type: 'category',
+          label: 'Модуль 4',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 7: Декоративні ефекти та елементи',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/image-types',
+
+                  label: 'Типи зображень',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/element-background',
+
+                  label: 'Фон елемента',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/object-fit-object-position',
+
+                  label: 'Властивості object-fit і object-position',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/pseudoelements',
+
+                  label: 'Псевдоелементи',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/gradient',
+
+                  label: 'Градієнт',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/shadow',
+
+                  label: 'Тінь елемента',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 8: Векторна графіка',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/vector-graphics',
+                  label: 'Векторна графіка',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/svg-elements',
+                  label: 'SVG-елементи',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/svg-document',
+                  label: 'SVG-документ',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/use',
+                  label: 'Використання',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/figure',
+                  label: 'Оформлення фігур',
+                },
+              ],
+            },
+          ],
+        },
+        // 7
         {
           type: 'category',
           label: 'Модуль 7',
@@ -369,6 +453,7 @@ const sidebars = {
             },
           ],
         },
+        // 8
         {
           type: 'category',
           label: 'Модуль 8',

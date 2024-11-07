@@ -1,5 +1,4 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
 
@@ -131,5 +130,3 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 Перейдіть у повну версію редактора прикладу за посиланням і змінюйте ширину області з результатом.
 
 <CodePenSnippet src="https://codepen.io/goit-academy/embed/MWKJWem?height=265&theme-id=default&default-tab=result" />
-
-

@@ -42,9 +42,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+
           routeBasePath: '/',
         },
         blog: {
@@ -72,6 +70,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -150,10 +154,10 @@ const config = {
           // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
           background: {
             light: 'rgb(255, 255, 255)',
-            dark: 'rgb(50, 50, 50)'
-          }
-        }
-      }
+            dark: 'rgb(50, 50, 50)',
+          },
+        },
+      },
     }),
 };
 

@@ -1,5 +1,4 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
 
@@ -51,5 +50,5 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
   margin-right: 50px;
 }
 ```
-<CodePenSnippet src='https://codepen.io/goit-academy/embed/YzGWWJQ?height=265&theme-id=dark&default-tab=result' />
 
+<CodePenSnippet src='https://codepen.io/goit-academy/embed/YzGWWJQ?height=265&theme-id=dark&default-tab=result' />

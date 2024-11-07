@@ -1,5 +1,4 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
 
@@ -172,7 +171,6 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 Для вибору непарних елементів можна використовувати формулу `2n + 1` або її псевдонім - значення `odd` - зарезервоване слово.
 
 <Image src='/img/HTML/Module--3-1/5-nth-odd.png' alt='Селектор nth-child' />
-
 
 ### Від `N`-го елемента
 

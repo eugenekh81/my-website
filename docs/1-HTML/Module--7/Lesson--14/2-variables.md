@@ -1,5 +1,4 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
 
@@ -19,7 +18,7 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 <Tabs>
   <TabItem value="scss" label="SCSS" default>
 
-```scss title="main.scss"
+```css title="main.scss"
 $primaryColor: #888;
 $cardBorderRadius: 4px;
 

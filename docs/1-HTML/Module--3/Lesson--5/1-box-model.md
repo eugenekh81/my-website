@@ -1,7 +1,7 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
+
 import { Image } from '@site/src/components/Image';
 import { CodePenSnippet } from '@site/src/components/CodePenSnippet';
 import { CustomTOC } from '@site/src/components/CustomTOC';
@@ -117,6 +117,7 @@ box-sizing: content-box | border-box | inherit
 <Image src='/img/HTML/Module--3-1/border-box.png' alt='Computed styles' />
 
 ### Глобальний border-box
+
 Стандартна блокова модель в сучасних проектах - це `border-box`. Для того щоб не ставити властивість `box-sizing` кожному елементу окремо, на самому початку файлу стилів використовується наступний CSS-код.
 
 ```css

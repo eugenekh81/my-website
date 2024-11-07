@@ -1,7 +1,7 @@
 ---
 hide_table_of_contents: true
-custom_edit_url: null
 ---
+
 import { CustomTOC } from '@site/src/components/CustomTOC';
 
 <CustomTOC toc={toc} />

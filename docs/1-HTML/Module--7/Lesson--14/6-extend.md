@@ -1,7 +1,7 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -47,28 +47,28 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    /* highlight-start */
-    .button,
-    .button-error,
-    .button-success {
-    /* highlight-end */
-      display: inline-flex;
-      border-radius: 3px;
-      font-size: 16px;
-      padding: 10px 20px;
-      color: white;
-      background-color: gray;
-    }
+```css title="main.css"
+/* highlight-start */
+.button,
+.button-error,
+.button-success {
+  /* highlight-end */
+  display: inline-flex;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: gray;
+}
 
-    .button-success {
-      background-color: green;
-    }
+.button-success {
+  background-color: green;
+}
 
-    .button-error {
-      background-color: red;
-    }
-  ```
+.button-error {
+  background-color: red;
+}
+```
 
   </TabItem>
 
@@ -116,27 +116,27 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-      /* highlight-start */
-    .button-error,
-    .button-success {
-    /* highlight-end */
-      display: inline-flex;
-      border-radius: 3px;
-      font-size: 16px;
-      padding: 10px 20px;
-      color: white;
-      background-color: gray;
-    }
+```css title="main.css"
+/* highlight-start */
+.button-error,
+.button-success {
+  /* highlight-end */
+  display: inline-flex;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: gray;
+}
 
-    .button-success {
-      background-color: green;
-    }
+.button-success {
+  background-color: green;
+}
 
-    .button-error {
-      background-color: red;
-    }
-  ```
+.button-error {
+  background-color: red;
+}
+```
 
   </TabItem>
 

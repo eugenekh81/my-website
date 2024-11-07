@@ -1,5 +1,4 @@
 ---
-custom_edit_url: null
 hide_table_of_contents: true
 ---
 
@@ -96,11 +95,11 @@ $value: 50px;
 
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .box {
-      margin: 40px;
-    }
-  ```
+```css title="main.css"
+.box {
+  margin: 40px;
+}
+```
 
   </TabItem>
 
@@ -123,11 +122,11 @@ $value: 50px;
 
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .box {
-      margin: calc($gridItemMargin * 2);
-    }
-  ```
+```css title="main.css"
+.box {
+  margin: calc($gridItemMargin * 2);
+}
+```
 
   </TabItem>
 
@@ -150,11 +149,11 @@ $value: 50px;
 
   <TabItem value="css" label="CSS">
 
-  ```css title="main.css"
-    .box {
-      margin: calc(20px * 2);
-    }
-  ```
+```css title="main.css"
+.box {
+  margin: calc(20px * 2);
+}
+```
 
   </TabItem>
 

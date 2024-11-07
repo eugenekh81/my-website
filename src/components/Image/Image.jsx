@@ -5,6 +5,7 @@ export const Image = ({ src, alt = '' }) => {
     <p align='center'>
       <img
         src={src}
+        loading='lazy'
         style={{
           display: 'block',
           maxWidth: '640px',

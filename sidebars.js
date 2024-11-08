@@ -391,7 +391,7 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--5/Lesson--10/2d-transformations',
+                  id: 'HTML/Module--5/Lesson--10/transformations',
                   label: '2D-трансформації',
                 },
               ],

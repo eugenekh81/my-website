@@ -336,6 +336,68 @@ const sidebars = {
             },
           ],
         },
+        // 5
+        {
+          type: 'category',
+          label: 'Модуль 5',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 9: Позиціоновані елементи',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--9/positioned-elements',
+
+                  label: 'Позиціоновані елементи',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--9/z-index',
+
+                  label: 'Властивість z-index',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--9/overflow',
+
+                  label: 'Властивість overflow',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 10: Анімація',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/css-transitions',
+                  label: 'CSS-переходи',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/animated-props',
+                  label: 'Анімовані властивості',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/CSS-animation',
+                  label: 'CSS-анімація',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/perspective',
+                  label: 'Перспектива',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/2d-transformations',
+                  label: '2D-трансформації',
+                },
+              ],
+            },
+          ],
+        },
         // 7
         {
           type: 'category',

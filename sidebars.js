@@ -398,6 +398,80 @@ const sidebars = {
             },
           ],
         },
+        // 6
+        {
+          type: 'category',
+          label: 'Модуль 6',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 11: Форми',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/forms',
+                  label: 'Форми',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/form',
+                  label: 'Елемент <form>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/label',
+                  label: 'Елемент <label>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/input',
+                  label: 'Елемент <input>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/textarea',
+                  label: 'Елемент <textarea>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/select',
+                  label: 'Елемент <select>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/datalist',
+                  label: 'Елемент <datalist>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/fieldset',
+                  label: 'Групування полів',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 12: Валідація форм',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--12/validation',
+                  label: 'Валідація',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--12/attributes',
+                  label: 'Атрибути валідації',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--12/state-pseudoclasses',
+                  label: 'Псевдокласи стану',
+                },
+              ],
+            },
+          ],
+        },
         // 7
         {
           type: 'category',

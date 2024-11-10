@@ -26,10 +26,9 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'HTML',
+      label: 'HTML + CSS',
       collapsed: false,
       items: [
-        // 1
         {
           type: 'category',
           label: 'Модуль 1: Основи HTML',
@@ -40,53 +39,53 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/html',
+                  id: 'HTML/Module--1/Lesson--1/html',
 
                   label: 'Веб-технології',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/tags',
+                  id: 'HTML/Module--1/Lesson--1/tags',
                   label: 'Теги та атрибути',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/html-structure',
+                  id: 'HTML/Module--1/Lesson--1/html-structure',
                   label: 'Скелет HTML-документа',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/semantics',
+                  id: 'HTML/Module--1/Lesson--1/semantics',
                   label: 'Семантика',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/text-styling',
+                  id: 'HTML/Module--1/Lesson--1/text-styling',
                   label: 'Розмітка тексту',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/images',
+                  id: 'HTML/Module--1/Lesson--1/images',
                   label: 'Зображення',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/structured-markup',
+                  id: 'HTML/Module--1/Lesson--1/structured-markup',
                   label: 'Структурна розмітка',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/validation',
+                  id: 'HTML/Module--1/Lesson--1/validation',
                   label: 'Валідація',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/developer-tools',
+                  id: 'HTML/Module--1/Lesson--1/developer-tools',
                   label: 'Інструменти розробника',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-1/code-style-guide',
+                  id: 'HTML/Module--1/Lesson--1/code-style-guide',
                   label: 'Оформлення коду',
                 },
               ],
@@ -97,29 +96,28 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-2/tables',
+                  id: 'HTML/Module--1/Lesson--2/tables',
                   label: 'Таблиці',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-2/text-markup',
+                  id: 'HTML/Module--1/Lesson--2/text-markup',
                   label: 'Розмітка тексту',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-2/html-symbols',
+                  id: 'HTML/Module--1/Lesson--2/html-symbols',
                   label: 'Символьні підстановки',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--1-2/video-audio',
+                  id: 'HTML/Module--1/Lesson--2/video-audio',
                   label: 'Відео та аудіо',
                 },
               ],
             },
           ],
         },
-        // 2
         {
           type: 'category',
           label: 'Модуль 2: Основи CSS',
@@ -130,37 +128,37 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-1/css-intro',
+                  id: 'HTML/Module--2/Lesson--3/css-intro',
 
                   label: 'Вступ до CSS',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-1/selectors',
+                  id: 'HTML/Module--2/Lesson--3/selectors',
 
                   label: 'Селектори',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-1/pseudoclasses',
+                  id: 'HTML/Module--2/Lesson--3/pseudoclasses',
 
                   label: 'Псевдокласи стану',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-1/color',
+                  id: 'HTML/Module--2/Lesson--3/color',
 
                   label: 'Робота з кольором',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-1/cascade',
+                  id: 'HTML/Module--2/Lesson--3/cascade',
 
                   label: 'Каскад стилів',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-1/css-variables',
+                  id: 'HTML/Module--2/Lesson--3/css-variables',
 
                   label: 'CSS-змінні',
                 },
@@ -172,25 +170,25 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-2/text-styling',
+                  id: 'HTML/Module--2/Lesson--4/text-styling',
 
                   label: 'Оформлення тексту',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-2/text-props',
+                  id: 'HTML/Module--2/Lesson--4/text-props',
 
                   label: 'Властивості шрифту',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-2/text-pseudoelements',
+                  id: 'HTML/Module--2/Lesson--4/text-pseudoelements',
 
                   label: 'Псевдоелементи тексту',
                 },
                 {
                   type: 'doc',
-                  id: 'HTML/Module--2-2/unique-fonts',
+                  id: 'HTML/Module--2/Lesson--4/unique-fonts',
 
                   label: 'Нестандартні шрифти',
                 },
@@ -198,7 +196,6 @@ const sidebars = {
             },
           ],
         },
-        // 3
         {
           type: 'category',
           label: 'Модуль 3: Блокова модель та Flexbox',
@@ -256,7 +253,6 @@ const sidebars = {
             },
           ],
         },
-        // 4
         {
           type: 'category',
           label: 'Модуль 4: Зображення',
@@ -336,7 +332,6 @@ const sidebars = {
             },
           ],
         },
-        // 5
         {
           type: 'category',
           label: 'Модуль 5: Позиціонування та анімація',
@@ -398,7 +393,6 @@ const sidebars = {
             },
           ],
         },
-        // 6
         {
           type: 'category',
           label: 'Модуль 6: Форми',
@@ -472,7 +466,6 @@ const sidebars = {
             },
           ],
         },
-        // 7
         {
           type: 'category',
           label: 'Модуль 7: BEM та SASS',
@@ -589,7 +582,6 @@ const sidebars = {
             },
           ],
         },
-        // 8
         {
           type: 'category',
           label: 'Модуль 8: Адаптивна верстка та графіка',
@@ -668,6 +660,639 @@ const sidebars = {
             },
           ],
         },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Javascript',
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: 'Модуль 1: Змінні та типи. Розгалуження. Цикли',
+          items: [
+            {
+              type: 'doc',
+              id: 'JS/Module--1/intro',
+
+              label: 'Знайомство з JavaScript',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/script',
+              label: 'Підключення скрипту',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/devtools',
+              label: 'Інструменти розробника',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/syntax-basics',
+              label: 'Основи синтаксису',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/variables-types',
+              label: 'Змінні і типи',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/user-interaction',
+              label: 'Взаємодія з користувачем',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/main-operators',
+              label: 'Основні оператори',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/numbers',
+              label: 'Числа',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/strings',
+              label: 'Рядки',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/logical-operators',
+              label: 'Логічні оператори',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/branching',
+              label: 'Розгалуження',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/ternary',
+              label: 'Тернарний оператор',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/switch',
+              label: 'Інструкція switch',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/scopes',
+              label: 'Область видимості',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/loops',
+              label: 'Цикли',
+            },
+          ],
+        },
+        /*
+        {
+          type: 'category',
+          label: 'Модуль 2: Основи CSS',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 3: Селектори та колір',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--3/css-intro',
+
+                  label: 'Вступ до CSS',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--3/selectors',
+
+                  label: 'Селектори',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--3/pseudoclasses',
+
+                  label: 'Псевдокласи стану',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--3/color',
+
+                  label: 'Робота з кольором',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--3/cascade',
+
+                  label: 'Каскад стилів',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--3/css-variables',
+
+                  label: 'CSS-змінні',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 4: Текст та шрифт',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--4/text-styling',
+
+                  label: 'Оформлення тексту',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--4/text-props',
+
+                  label: 'Властивості шрифту',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--4/text-pseudoelements',
+
+                  label: 'Псевдоелементи тексту',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--2/Lesson--4/unique-fonts',
+
+                  label: 'Нестандартні шрифти',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 3: Блокова модель та Flexbox',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 5: Блокова модель',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--5/box-model',
+
+                  label: 'Блокова модель',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--5/element-geometry',
+
+                  label: 'Геометрія елемента',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--5/element-types',
+
+                  label: 'Типи елемента',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--5/structural-pseudoclasses',
+
+                  label: 'Структурні псевдокласи',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 6: Flexbox',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--6/main-concepts',
+                  label: 'Основні концепції',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--6/container-properties',
+                  label: 'Властивості контейнера',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--3/Lesson--6/element-properties',
+                  label: 'Властивості елемента',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 4: Зображення',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 7: Декоративні ефекти та елементи',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/image-types',
+
+                  label: 'Типи зображень',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/element-background',
+
+                  label: 'Фон елемента',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/object-fit-object-position',
+
+                  label: 'Властивості object-fit і object-position',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/pseudoelements',
+
+                  label: 'Псевдоелементи',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/gradient',
+
+                  label: 'Градієнт',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--7/shadow',
+
+                  label: 'Тінь елемента',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 8: Векторна графіка',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/vector-graphics',
+                  label: 'Векторна графіка',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/svg-elements',
+                  label: 'SVG-елементи',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/svg-document',
+                  label: 'SVG-документ',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/use',
+                  label: 'Використання',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--4/Lesson--8/figure',
+                  label: 'Оформлення фігур',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 5: Позиціонування та анімація',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 9: Позиціоновані елементи',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--9/positioned-elements',
+
+                  label: 'Позиціоновані елементи',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--9/z-index',
+
+                  label: 'Властивість z-index',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--9/overflow',
+
+                  label: 'Властивість overflow',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 10: Анімація',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/css-transitions',
+                  label: 'CSS-переходи',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/animated-props',
+                  label: 'Анімовані властивості',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/CSS-animation',
+                  label: 'CSS-анімація',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/perspective',
+                  label: 'Перспектива',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--5/Lesson--10/transformations',
+                  label: '2D-трансформації',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 6: Форми',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 11: Форми',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/forms',
+                  label: 'Форми',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/form',
+                  label: 'Елемент <form>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/label',
+                  label: 'Елемент <label>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/input',
+                  label: 'Елемент <input>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/textarea',
+                  label: 'Елемент <textarea>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/select',
+                  label: 'Елемент <select>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/datalist',
+                  label: 'Елемент <datalist>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--11/fieldset',
+                  label: 'Групування полів',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 12: Валідація форм',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--12/validation',
+                  label: 'Валідація',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--12/attributes',
+                  label: 'Атрибути валідації',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--6/Lesson--12/state-pseudoclasses',
+                  label: 'Псевдокласи стану',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 7: BEM та SASS',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 13: Методологія БЕМ',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/css-methodologies',
+
+                  label: 'CSS-методології',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/BEM-methodolody',
+
+                  label: 'Методологія BEM',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/block',
+
+                  label: 'Блок',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/element',
+
+                  label: 'Елемент',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/modifier',
+
+                  label: 'Модифікатор',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/mix',
+
+                  label: 'Мікс',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/selectors',
+
+                  label: 'Селектори',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--13/goods-section',
+
+                  label: 'Секція товарів',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 14: Препроцесор SASS',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/preprocessors',
+                  label: 'Препроцесори',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/variables',
+                  label: 'Змінні',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/nested-rules',
+                  label: 'Вкладені правила',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/math-operations',
+                  label: 'Арифметичні операції',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/import',
+                  label: 'Директива @import',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/extend',
+                  label: 'Директива @extend',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/mixin',
+                  label: 'Директива @mixin',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/each',
+                  label: 'Директива @each',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/maps',
+                  label: 'Мапи (словники)',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--7/Lesson--14/vendor-prefixes',
+                  label: 'Вендорні префікси',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 8: Адаптивна верстка та графіка',
+          items: [
+            {
+              type: 'category',
+              label: 'Заняття 15: Адаптивна верстка',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/media-queries',
+
+                  label: 'Медіа-запити',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/viewport-metatag',
+
+                  label: 'Метатег viewport',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/dev-tools',
+
+                  label: 'Інструменти розробника',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/markup-types',
+
+                  label: 'Типи верстки',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--15/mobile-first-strategy',
+
+                  label: 'Стратегія Mobile First',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Заняття 16: Адаптивна графіка',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/pixel-density',
+
+                  label: 'Щільність пікселів',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/responsive-images',
+
+                  label: 'Респонсивні зображення',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/responsive-background-images',
+
+                  label: 'Респонсивні фонові зображення',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/responsive-img-element',
+
+                  label: 'Респонсивний елемент <img>',
+                },
+                {
+                  type: 'doc',
+                  id: 'HTML/Module--8/Lesson--16/picture-element',
+
+                  label: 'Елемент <picture>',
+                },
+              ],
+            },
+          ],
+        },
+        */
       ],
     },
   ],

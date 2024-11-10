@@ -32,7 +32,7 @@ const sidebars = {
         // 1
         {
           type: 'category',
-          label: 'Модуль 1',
+          label: 'Модуль 1: Основи HTML',
           items: [
             {
               type: 'category',
@@ -122,7 +122,7 @@ const sidebars = {
         // 2
         {
           type: 'category',
-          label: 'Модуль 2',
+          label: 'Модуль 2: Основи CSS',
           items: [
             {
               type: 'category',
@@ -201,7 +201,7 @@ const sidebars = {
         // 3
         {
           type: 'category',
-          label: 'Модуль 3',
+          label: 'Модуль 3: Блокова модель та Flexbox',
           items: [
             {
               type: 'category',
@@ -259,7 +259,7 @@ const sidebars = {
         // 4
         {
           type: 'category',
-          label: 'Модуль 4',
+          label: 'Модуль 4: Зображення',
           items: [
             {
               type: 'category',
@@ -339,7 +339,7 @@ const sidebars = {
         // 5
         {
           type: 'category',
-          label: 'Модуль 5',
+          label: 'Модуль 5: Позиціонування та анімація',
           items: [
             {
               type: 'category',
@@ -401,7 +401,7 @@ const sidebars = {
         // 6
         {
           type: 'category',
-          label: 'Модуль 6',
+          label: 'Модуль 6: Форми',
           items: [
             {
               type: 'category',
@@ -475,7 +475,7 @@ const sidebars = {
         // 7
         {
           type: 'category',
-          label: 'Модуль 7',
+          label: 'Модуль 7: BEM та SASS',
           items: [
             {
               type: 'category',
@@ -592,7 +592,7 @@ const sidebars = {
         // 8
         {
           type: 'category',
-          label: 'Модуль 8',
+          label: 'Модуль 8: Адаптивна верстка та графіка',
           items: [
             {
               type: 'category',

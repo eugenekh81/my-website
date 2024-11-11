@@ -36,3 +36,7 @@ html {
 summary p {
   font-weight: 600;
 }
+
+img {
+  width: 100%;
+}

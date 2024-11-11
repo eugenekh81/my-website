@@ -27,7 +27,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'HTML + CSS',
-      collapsed: false,
       items: [
         {
           type: 'category',
@@ -694,8 +693,13 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'JS/Module--1/variables-types',
-              label: 'Змінні і типи',
+              id: 'JS/Module--1/variables',
+              label: 'Змінні',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--1/types',
+              label: 'Типи даних',
             },
             {
               type: 'doc',

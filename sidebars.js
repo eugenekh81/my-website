@@ -753,6 +753,47 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'Модуль 2 - Масиви. Функції',
+          items: [
+            {
+              type: 'doc',
+              id: 'JS/Module--2/arrays',
+              label: 'Масиви',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--2/array-iteration',
+              label: 'Ітерація по масиву',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--2/assignment',
+              label: 'Присвоєння за посиланням і за значенням',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--2/array-methods',
+              label: 'Методи масиву',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--2/functions',
+              label: 'Функції',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--2/scope',
+              label: 'Область видимості',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--2/call-stack',
+              label: 'Стек викликів',
+            },
+          ],
+        },
         /*
         {
           type: 'category',

@@ -39,10 +39,7 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 :::
 
 ```js
-let
- a =
-5
-;
+let a = 5;
 // Присвоєння за значенням, в пам'яті буде створена ще
 // одна комірка, в яку буде скопійоване значення 5
 let b = a;
@@ -59,7 +56,7 @@ console.log(b); // 5
 **Складні типи** - `об'єкти`, `масиви`, `функції` присвоюються **за посиланням**, тобто змінна просто отримує посилання на вже існуючий об'єкт.
 
 ```js
-const a = ["Mango"];
+const a = ['Mango'];
 // Оскільки a - це масив, в b записується посилання на вже існуючий
 // масив в пам'яті. Тепер a і b вказують на той самий масив.
 const b = a;
@@ -67,7 +64,7 @@ console.log(a); // ["Mango"]
 console.log(b); // ["Mango"]
 
 // Змінимо масив, додавши ще один елемент, використовуючи вказівник з a
-a.push("Poly");
+a.push('Poly');
 console.log(a); // ["Mango", "Poly"]
 
 // b також змінилось, тому що b, як і a,
@@ -75,8 +72,7 @@ console.log(a); // ["Mango", "Poly"]
 console.log(b); // ["Mango", "Poly"]
 
 // Результат повторюється
-b.push("Ajax");
+b.push('Ajax');
 console.log(a); // ["Mango", "Poly", "Ajax"]
 console.log(b); // ["Mango", "Poly", "Ajax"]
 ```
-

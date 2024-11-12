@@ -664,7 +664,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'Javascript',
-      collapsed: false,
       items: [
         {
           type: 'category',
@@ -812,7 +811,7 @@ const sidebars = {
               type: 'doc',
               id: 'JS/Module--3/array-of-objects',
               label: 'Масив обʼєктів',
-            }
+            },
           ],
         },
         {
@@ -838,7 +837,7 @@ const sidebars = {
               type: 'doc',
               id: 'JS/Module--4/options-object-pattern',
               label: 'Патерн «Обʼєкт параметрів»',
-            }
+            },
           ],
         },
         /*

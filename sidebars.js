@@ -794,6 +794,53 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'Модуль 3 - Обʼєкти',
+          items: [
+            {
+              type: 'doc',
+              id: 'JS/Module--3/objects',
+              label: 'Обʼєкти',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--3/object-iteration',
+              label: 'Перебирання обʼєкта',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--3/array-of-objects',
+              label: 'Масив обʼєктів',
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Модуль 4 - Операції spread і rest',
+          items: [
+            {
+              type: 'doc',
+              id: 'JS/Module--4/rest-spread',
+              label: 'Обʼєкти',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--4/object-destructuring',
+              label: 'Деструктуризація обʼєктів',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--4/array-destructuring',
+              label: 'Деструктуризація масивів',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--4/options-object-pattern',
+              label: 'Патерн «Обʼєкт параметрів»',
+            }
+          ],
+        },
         /*
         {
           type: 'category',

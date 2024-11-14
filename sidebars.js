@@ -939,6 +939,27 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'Модуль 9: Ключове слово this',
+          items: [
+            {
+              type: 'doc',
+              id: 'JS/Module--9/function-context',
+              label: 'Контекст виконання функції',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--9/this-definition-rules',
+              label: 'Правила визначення this',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--9/methods-of-functions',
+              label: 'методи функцій',
+            },
+          ],
+        },
       ],
     },
   ],

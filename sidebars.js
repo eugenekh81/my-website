@@ -960,6 +960,27 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'Модуль 10: Прототипи і класи',
+          items: [
+            {
+              type: 'doc',
+              id: 'JS/Module--10/OOP',
+              label: 'Обʼєктно-орієнтоване програмування',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--10/prototype-inheritance',
+              label: 'Прототипне наслідування',
+            },
+            {
+              type: 'doc',
+              id: 'JS/Module--10/classes',
+              label: 'Класи',
+            },
+          ],
+        },
       ],
     },
   ],

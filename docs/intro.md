@@ -1,8 +1,12 @@
 ---
 slug: '/'
 pagination_next: null
+hide_table_of_contents: true
 ---
+import DocCardList from '@theme/DocCardList';
 
 # ЛАСКАВО ПРОШУ ДО КОНСПЕКТУ!
 
-Обирайте тему та вйо до навчання!
+## Обирайте курс та вйо до навчання!
+
+<DocCardList />

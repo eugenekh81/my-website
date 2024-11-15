@@ -1025,6 +1025,32 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'category',
+              label: 'Модуль 12: Події',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--12/events',
+                  label: 'Події',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--12/event-object',
+                  label: "Об'єкт події",
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--12/keyboard-events',
+                  label: 'Події клавіатури',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--12/form-events',
+                  label: 'Події елементів форм',
+                },
+              ],
+            },
           ],
         },
       ],

@@ -63,6 +63,6 @@ elem.insertAdjacentHTML(position, string);
 
 <CP src='https://codepen.io/goit-academy/embed/mdWKMOE?height=265&theme-id=dark&default-tab=js,result' />
 
-::: Цікаво
+:::tip Цікаво
 `"beforebegin"` і `"afterend"` працюють тільки тоді, коли `elem` вже знаходиться в DOM-дереві.
 :::

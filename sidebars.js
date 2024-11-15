@@ -1053,7 +1053,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Модуль 12: Події',
+              label: 'Модуль 13: Делегування подій',
               items: [
                 {
                   type: 'doc',

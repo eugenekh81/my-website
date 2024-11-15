@@ -964,9 +964,9 @@ const sidebars = {
               ],
             },
             {
-              // type: 'category',
-              // label: 'Модуль 10: Прототипи і класи',
-              'Модуль 10: Прототипи і класи': [
+              type: 'category',
+              label: 'Модуль 10: Прототипи і класи',
+              items: [
                 {
                   type: 'doc',
                   id: 'JS/Module--10/OOP',
@@ -981,6 +981,47 @@ const sidebars = {
                   type: 'doc',
                   id: 'JS/Module--10/classes',
                   label: 'Класи',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: "Модуль 11: Об'єктна модель документа",
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--11/DOM',
+                  label: "Об'єктна модель документа",
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--11/navigation',
+                  label: 'Навігація по DOM',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--11/search-elements',
+                  label: 'Пошук елементів',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--11/props-attributes',
+                  label: 'Властивості та атрибути',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--11/create-remove',
+                  label: 'Створення та видалення елементів',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--11/innerHTML',
+                  label: 'Властивість innerHTML',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--11/scripts',
+                  label: 'Підключення скриптів',
                 },
               ],
             },

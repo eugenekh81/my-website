@@ -1051,6 +1051,28 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'category',
+              label: 'Модуль 12: Події',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--13/event-propagation',
+                  label: 'Поширення подій',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--13/event-bubbling',
+                  label: 'Спливання подій',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--13/event-delegation',
+                  label: 'Делегування подій',
+                }
+              ],
+            },
+
           ],
         },
       ],

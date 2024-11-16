@@ -1109,13 +1109,66 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  id: 'JS/Module--15/modules',
-                  label: 'Модульність коду',
+                  id: 'JS/Module--15/webpack',
+                  label: 'Знайомство з Webpack',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Модуль 16: Веб-сховище',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--16/json',
+                  label: 'Формат JSON',
                 },
                 {
                   type: 'doc',
-                  id: 'JS/Module--15/webpack',
-                  label: 'Знайомство з Webpack',
+                  id: 'JS/Module--16/storage',
+                  label: 'Веб-сховище',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Модуль 17: Таймери та час',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--17/async-code',
+                  label: 'Асинхронність',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--17/timers',
+                  label: 'Таймери',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--17/date',
+                  label: 'Дата і час',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Модуль 18: Проміси',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--18/promises',
+                  label: 'Проміси',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--18/static-methods',
+                  label: 'Методи класу Promise',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--18/event-loop',
+                  label: 'Цикл подій',
                 },
               ],
             },

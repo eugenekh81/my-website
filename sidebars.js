@@ -1069,10 +1069,56 @@ const sidebars = {
                   type: 'doc',
                   id: 'JS/Module--13/event-delegation',
                   label: 'Делегування подій',
-                }
+                },
               ],
             },
-
+            {
+              type: 'category',
+              label: 'Модуль 14: throttle/debounce і lazyloading',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--14/throttle-debounce',
+                  label: 'Throttle і Debounce',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--14/lazy-loading',
+                  label: 'Відкладене завантаження',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Модуль 15: Модульність коду',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--15/nodejs',
+                  label: 'Node.js',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--15/npm',
+                  label: 'Пакетний менеджер npm',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--15/modules',
+                  label: 'Модульність коду',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--15/modules',
+                  label: 'Модульність коду',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--15/webpack',
+                  label: 'Знайомство з Webpack',
+                },
+              ],
+            },
           ],
         },
       ],

@@ -65,7 +65,7 @@ npm config set init.author.name "YOUR_NAME"
 npm config set init.author.email "YOUR_EMAIL"
 ```
 
-<Image src='/img/js/npm-init.png' />
+<Image src='/img/JS/npm-init.png' />
 
 Файл `package.json` можна редагувати вручну або виконати `npm init` ще раз. Якщо відкрити `package.json` в редакторі, він буде виглядати приблизно так. Це всього лише метадані про проект.
 
@@ -137,20 +137,20 @@ NPM завантажив `validator` і помістив його в `node_modul
 Щоб отримати інтерфейс пакета в Node.js-коді, необхідно викликати функцію `require("ім'я-модуля")`, передаючи аргументом їй ім'я модуля без визначення шляху - це називається абсолютний імпорт. Шлях не потрібен, оскільки за замовчуванням пошук модуля буде відбуватися в папці `node_modules`. Результатом свого виконання функція поверне інтерфейс модуля - об'єкт з методами або просто функцію - залежить від пакета.
 
 ```js title="index.js"
-const validator = require("validator");
+const validator = require('validator');
 
-const validateEmail = email => {
+const validateEmail = (email) => {
   return validator.isEmail(email);
 };
 
 console.log(
-  "Is mango@mail.com a valid email?: ",
-  validateEmail("mango@mail.com")
+  'Is mango@mail.com a valid email?: ',
+  validateEmail('mango@mail.com')
 );
 
 console.log(
-  "Is Mangozedog.com a valid email?: ",
-  validateEmail("Mangozedog.com")
+  'Is Mangozedog.com a valid email?: ',
+  validateEmail('Mangozedog.com')
 );
 ```
 
@@ -162,6 +162,7 @@ Is Mangozedog.com a valid email?: false
 ```
 
 ## Видалення пакетів
+
 Припустимо, що версія validator, встановлена в попередньому прикладі, викликає проблеми з сумісністю. Ми можемо видалити цей пакет і поставити старішу версію.
 
 ```shell
@@ -169,6 +170,7 @@ npm uninstall validator
 ```
 
 ## Встановлення певної версії пакета
+
 Тепер встановимо потрібну версію validator. У команді встановлення номер версії вказується після символу @.
 
 ```shell
@@ -192,10 +194,11 @@ npm install validator@1.0.0
 - `--global` - вказує, що додається глобальна залежність, тобто інструмент, який доступний для будь-якого проекту. Пакет буде встановлений глобально (в систему).
 
 :::tip Цікаво
+
 - Якщо не вказувати прапорець, буде використаний `--save `за замовчуванням.
 - Видаляючи пакет, необхідно вказувати правильний прапорець, такий самий, що й для встановлення.
 - Не встановлюйте пакети глобально, якщо ви працюєте на проекті з іншими розробниками.
-:::
+  :::
 
 ## Управління версіями пакетів
 

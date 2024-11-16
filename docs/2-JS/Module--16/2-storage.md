@@ -41,30 +41,31 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 Використовуючи метод `setItem(key, value)`, можна додати новий запис у вигляді пари `ключ:значення`:
 
 ```js
-localStorage.setItem("ui-theme", "light");
-localStorage.setItem("sidebar", "expanded");
-localStorage.setItem("notification-level", "mute");
+localStorage.setItem('ui-theme', 'light');
+localStorage.setItem('sidebar', 'expanded');
+localStorage.setItem('notification-level', 'mute');
 ```
 
 Якщо необхідно зберегти щось, крім рядка, наприклад, масив або об'єкт, необхідно перетворити їх у рядок методом `JSON.stringify()`:
 
 ```js
 const settings = {
-theme: "dark",
-isAuthenticated: true,
-options: [1, 2, 3],
+  theme: 'dark',
+  isAuthenticated: true,
+  options: [1, 2, 3],
 };
 
-localStorage.setItem("settings", JSON.stringify(settings));
+localStorage.setItem('settings', JSON.stringify(settings));
 ```
 
 ### Читання
+
 Метод `getItem(key)` дозволяє прочитати зі сховища запис з ключем `key`. Якщо у сховищі відсутній запис з таким ключем, метод повертає `null`. Якщо значення - це звичайний рядок, немає потреби його парсити:
 
 ```js
-localStorage.setItem("ui-theme", "dark");
+localStorage.setItem('ui-theme', 'dark');
 
-const theme = localStorage.getItem("ui-theme");
+const theme = localStorage.getItem('ui-theme');
 console.log(theme); // "dark"
 ```
 
@@ -72,14 +73,14 @@ console.log(theme); // "dark"
 
 ```js
 const settings = {
-theme: "dark",
-isAuthenticated: true,
-options: [1, 2, 3],
+  theme: 'dark',
+  isAuthenticated: true,
+  options: [1, 2, 3],
 };
 
-localStorage.setItem("settings", JSON.stringify(settings));
+localStorage.setItem('settings', JSON.stringify(settings));
 
-const savedSettings = localStorage.getItem("settings");
+const savedSettings = localStorage.getItem('settings');
 const parsedSettings = JSON.parse(savedSettings);
 console.log(parsedSettings); // settings object
 ```
@@ -93,11 +94,11 @@ console.log(parsedSettings); // settings object
 Метод `removeItem(key)` видаляє зі сховища вже існуючий запис з ключем `key`:
 
 ```js
-localStorage.setItem("ui-theme", "dark");
-console.log(localStorage.getItem("ui-theme")); // "dark"
+localStorage.setItem('ui-theme', 'dark');
+console.log(localStorage.getItem('ui-theme')); // "dark"
 
-localStorage.removeItem("ui-theme");
-console.log(localStorage.getItem("ui-theme")); // null
+localStorage.removeItem('ui-theme');
+console.log(localStorage.getItem('ui-theme')); // null
 ```
 
 ### Очищення сховища
@@ -105,17 +106,17 @@ console.log(localStorage.getItem("ui-theme")); // null
 Операція повного очищення сховища - небезпечна, оскільки може порушити записи, зроблені іншими розробниками проекту. Проте, якщо ви хочете повністю очистити сховище, потрібно викликати метод `clear()`:
 
 ```js
-localStorage.setItem("ui-theme", "light");
-localStorage.setItem("sidebar", "expanded");
-localStorage.setItem("notification-level", "mute");
-console.log(localStorage.getItem("ui-theme")); // "light"
-console.log(localStorage.getItem("sidebar")); // "expanded"
-console.log(localStorage.getItem("notification-level")); // "mute"
+localStorage.setItem('ui-theme', 'light');
+localStorage.setItem('sidebar', 'expanded');
+localStorage.setItem('notification-level', 'mute');
+console.log(localStorage.getItem('ui-theme')); // "light"
+console.log(localStorage.getItem('sidebar')); // "expanded"
+console.log(localStorage.getItem('notification-level')); // "mute"
 
 localStorage.clear();
-console.log(localStorage.getItem("ui-theme")); // null
-console.log(localStorage.getItem("sidebar")); // null
-console.log(localStorage.getItem("notification-level")); // null
+console.log(localStorage.getItem('ui-theme')); // null
+console.log(localStorage.getItem('sidebar')); // null
+console.log(localStorage.getItem('notification-level')); // null
 ```
 
 ## Зберігаємо повідомлення
@@ -126,9 +127,10 @@ console.log(localStorage.getItem("notification-level")); // null
 
 Подивитися вміст веб-сховища можна в інструментах розробника на вкладці `Application`. Там само ви можете вручну видаляти і додавати записи. На практиці це використовується під час розробки та налагодження роботи застосунку.
 
-<img src='/img/js/localstorage.png' alt='Сховище у інструментах розробника' />
+<img src='/img/JS/localstorage.png' alt='Сховище у інструментах розробника' />
 
 ## Сервіс для localStorage
+
 Для того, щоб скоротити кількість повторюваного коду при роботі з веб-сховищем, можна написати сервіс зі стандартними методами, наприклад, `save` і `load`. Вони будуть абстрагувати повторюваний код перевірки помилок парса і подібну рутину.
 
 ```js title="storage.js"
@@ -137,16 +139,16 @@ const save = (key, value) => {
     const serializedState = JSON.stringify(value);
     localStorage.setItem(key, serializedState);
   } catch (error) {
-    console.error("Set state error: ", error.message);
+    console.error('Set state error: ', error.message);
   }
 };
 
-const load = key => {
+const load = (key) => {
   try {
     const serializedState = localStorage.getItem(key);
     return serializedState === null ? undefined : JSON.parse(serializedState);
   } catch (error) {
-    console.error("Get state error: ", error.message);
+    console.error('Get state error: ', error.message);
   }
 };
 

@@ -40,7 +40,7 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 
 ## DOM-дерево
 
-Візуалізуємо дерево HTML-документа, використовуючи сервіс [генератора DOM-дерева](https://software.hixie.ch/utilities/js/live-dom-viewer/)
+Візуалізуємо дерево HTML-документа, використовуючи сервіс [генератора DOM-дерева](https://software.hixie.ch/utilities/JS/live-dom-viewer/)
 
 ```html
 <!DOCTYPE html>

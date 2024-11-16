@@ -12,7 +12,7 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 
 Полі обіцяє спекти торт на мій день народження через два тижні. Якщо все буде добре і вона не захворіє, у мене буде торт. Якщо Полі буде погано себе почувати, то не зможе спекти торт. В будь-якому разі, ми все одно влаштуємо вечірку. Обіцянка - це не гарантія виконання, ми не знаємо, чи виконає її, чи ні. У програмуванні також є завдання, результат яких ми дізнаємося тільки у майбутньому.
 
-<img src='/img/js/promise-story.png' alt='Promise story about cake' />
+<img src='/img/JS/promise-story.png' alt='Promise story about cake' />
 
 **Promise (обіцянка, проміс)** - об'єкт, що представляє поточний стан асинхронної операції. Це обгортка для значення, невідомого на момент створення промісу. Дозволяє обробляти результати асинхронних операцій таким чином, якби вони були синхронними: замість кінцевого результату асинхронної операції, повертається своєрідна обіцянка отримати результат у майбутньому.
 
@@ -22,7 +22,7 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 - **Виконано (`fulfilled`)** - операція виконана успішно з будь-яким результатом
 - **Відхилено (`rejected`)** - операція відхилена з помилкою
 
-<Image src='/img/js/promise-states.png' alt='Promise story about cake' />
+<Image src='/img/JS/promise-states.png' alt='Promise story about cake' />
 
 На момент створення проміс знаходиться в очікуванні (`pending`), після чого може завершитися успішно (`fulfilled`), повернувши результат (значення), або з помилкою (`rejected`), повернувши причину. Коли проміс переходить у стан `fulfilled` або `rejected` - це назавжди.
 
@@ -52,7 +52,7 @@ const promise = new Promise((resolve, reject) => {
 - `resolve(value)` - функція для виклику у разі успішної операції. Переданий їй аргумент буде значенням виконаного промісу
 - `reject(error)` - функція для виклику у разі помилки. Переданий їй аргумент буде значенням відхиленого промісу
 
-<Image src='/img/js/creating-promise.png' alt='Створення промісу' />
+<Image src='/img/JS/creating-promise.png' alt='Створення промісу' />
 
 ```js
 // Change value of isSuccess variable to call resolve or reject
@@ -86,7 +86,7 @@ promise.then(onResolve, onReject);
 - `onResolve(value)` - буде викликана у разі успішного виконання промісу і отримає його результат як аргумент
 - `onReject(error)` - буде викликана у разі виконання промісу з помилкою і отримає її як аргумент
 
-<Image src='/img/js/method-then.png' alt='Метод then()' />
+<Image src='/img/JS/method-then.png' alt='Метод then()' />
 
 У прикладі, callback-функція onResolve буде викликана через дві секунди, якщо обіцянка успішно виконається, а onReject буде викликана через дві секунди у тому разі, якщо обіцянка виконається з помилкою.
 
@@ -97,32 +97,32 @@ const isSuccess = true;
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     if (isSuccess) {
-      resolve("Success! Value passed to resolve function");
+      resolve('Success! Value passed to resolve function');
     } else {
-      reject("Error! Error passed to reject function");
+      reject('Error! Error passed to reject function');
     }
   }, 2000);
 });
 
 // Will run first
-console.log("Before promise.then()");
+console.log('Before promise.then()');
 
 // Registering promise callbacks
 promise.then(
   // onResolve will run third or not at all
-  value => {
-    console.log("onResolve call inside promise.then()");
+  (value) => {
+    console.log('onResolve call inside promise.then()');
     console.log(value); // "Success! Value passed to resolve function"
   },
   // onReject will run third or not at all
-  error => {
-    console.log("onReject call inside promise.then()");
+  (error) => {
+    console.log('onReject call inside promise.then()');
     console.log(error); // "Error! Error passed to reject function"
   }
 );
 
 // Will run second
-console.log("After promise.then()");
+console.log('After promise.then()');
 ```
 
 :::tip Цікаво
@@ -133,10 +133,10 @@ console.log("After promise.then()");
 
 На практиці в методі `then()` обробляють тільки успішне виконання промісу, а помилку його виконання у спеціальному методі `catch()` для «відловлювання» помилок.
 
-<Image src='/img/js/method-catch.png' alt='Метод catch()' />
+<Image src='/img/JS/method-catch.png' alt='Метод catch()' />
 
 ```js
-promise.catch(error => {
+promise.catch((error) => {
   // Promise rejected
 });
 ```
@@ -150,26 +150,27 @@ const isSuccess = true;
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     if (isSuccess) {
-      resolve("Success! Value passed to resolve function");
+      resolve('Success! Value passed to resolve function');
     } else {
-      reject("Error! Error passed to reject function");
+      reject('Error! Error passed to reject function');
     }
   }, 2000);
 });
 
 promise
-  .then(value => {
+  .then((value) => {
     console.log(value);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });
 ```
 
 ## Метод `finally()`
+
 Цей метод може бути корисним, якщо необхідно виконати код після того, як обіцянка буде дозволена (`fulfilled` або `rejected`), незалежно від результату. Дозволяє уникнути дублювання коду в обробниках `then()` і `catch()`.
 
-<img src='/img/js/method-finally.png' alt='Метод finally()' />
+<img src='/img/JS/method-finally.png' alt='Метод finally()' />
 
 ```js
 promise.finally(() => {
@@ -186,24 +187,24 @@ const isSuccess = true;
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     if (isSuccess) {
-      resolve("Success! Value passed to resolve function");
+      resolve('Success! Value passed to resolve function');
     } else {
-      reject("Error! Error passed to reject function");
+      reject('Error! Error passed to reject function');
     }
   }, 2000);
 });
 
 promise
-  .then(value => console.log(value)) // "Success! Value passed to resolve function"
-  .catch(error => console.log(error)) // "Error! Error passed to reject function"
-  .finally(() => console.log("Promise settled")); // "Promise settled"
+  .then((value) => console.log(value)) // "Success! Value passed to resolve function"
+  .catch((error) => console.log(error)) // "Error! Error passed to reject function"
+  .finally(() => console.log('Promise settled')); // "Promise settled"
 ```
 
 ## Ланцюжки промісів
 
 Метод `then()` результатом свого виконання повертає ще один проміс, значенням якого буде те, що поверне його callback-функція `onResolve`. Це дозволяє будувати асинхронні ланцюжки з промісів.
 
-<img src='/img/js/promise-chain.png' alt='Ланцюжки промісів' />
+<img src='/img/JS/promise-chain.png' alt='Ланцюжки промісів' />
 
 Оскільки метод `then()` повертає проміс, перед його виконанням може минути деякий час, тому частина ланцюжка, що залишилася, буде чекати. У разі виникнення помилки в будь-якому місці ланцюжка, виконання всіх наступних `then()` скасовується, а управління передається методу `catch()`. Тому він знаходиться в кінці ланцюжка промісів.
 
@@ -215,22 +216,22 @@ const promise = new Promise((resolve, reject) => {
 });
 
 promise
-  .then(value => {
+  .then((value) => {
     console.log(value); // 5
     return value * 2;
   })
-  .then(value => {
+  .then((value) => {
     console.log(value); // 10
     return value * 3;
   })
-  .then(value => {
+  .then((value) => {
     console.log(value); // 30
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .finally(() => {
-    console.log("Final task");
+    console.log('Final task');
   });
 ```
 
@@ -247,22 +248,22 @@ const fetchUserFromServer = (username, onSuccess, onError) => {
     const isSuccess = true;
 
     if (isSuccess) {
-      onSuccess("success value");
+      onSuccess('success value');
     } else {
-      onError("error");
+      onError('error');
     }
   }, 2000);
 };
 
-const onFetchSuccess = user => {
+const onFetchSuccess = (user) => {
   console.log(user);
 };
 
-const onFetchError = error => {
+const onFetchError = (error) => {
   console.error(error);
 };
 
-fetchUserFromServer("Mango", onFetchSuccess, onFetchError);
+fetchUserFromServer('Mango', onFetchSuccess, onFetchError);
 ```
 
 Зараз функція `fetchUserFromServer()` знає занадто багато про той код, який буде використовувати результат її роботи. Вона очікує колбеки і відповідає за їх виклик за певних умов. Тобто ми передаємо щось всередину функції (колбеки) і сподіваємося, що воно відпрацює правильно - це недобре.
@@ -270,7 +271,7 @@ fetchUserFromServer("Mango", onFetchSuccess, onFetchError);
 Краще, якщо функція не зважає на той код, який буде використовувати її результат. Вона просто виконує якусь операцію і повертає результат своєї роботи у зовнішній код. Для того щоб повернути результат асинхронної операції, з функції необхідно повернути проміс. Промісифікація - це перетворення функції з колбеками таким чином, щоб вона не приймала колбеки, а повертала проміс.
 
 ```js
-const fetchUserFromServer = username => {
+const fetchUserFromServer = (username) => {
   return new Promise((resolve, reject) => {
     console.log(`Fetching data for ${username}`);
 
@@ -279,17 +280,17 @@ const fetchUserFromServer = username => {
       const isSuccess = true;
 
       if (isSuccess) {
-        resolve("success value");
+        resolve('success value');
       } else {
-        reject("error");
+        reject('error');
       }
     }, 2000);
   });
 };
 
-fetchUserFromServer("Mango")
-  .then(user => console.log(user))
-  .catch(error => console.error(error));
+fetchUserFromServer('Mango')
+  .then((user) => console.log(user))
+  .catch((error) => console.error(error));
 ```
 
 :::tip Цікаво

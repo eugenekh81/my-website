@@ -1172,6 +1172,65 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'category',
+              label: 'Модуль 19: HTTP-запити',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--19/http',
+                  label: 'Протокол HTTP',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--19/rest-api',
+                  label: 'REST API',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--19/fetch',
+                  label: 'AJAX',
+                },
+                {
+                  type: 'doc',
+                  id: 'JS/Module--19/cors',
+                  label: 'Крос-доменні запити',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Модуль 19: Пагінація',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--20/pagination',
+                  label: 'Пагінація',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Модуль 20: CRUD',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--21/crud',
+                  label: 'CRUD',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Модуль 20: Синтаксис async/await',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'JS/Module--21/async-await',
+                  label: 'Асинхронні функції',
+                },
+              ],
+            },
           ],
         },
       ],

@@ -14,7 +14,6 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 
 За допомогою властивості `color` можна змінити колір тексту елемента. Сучасні браузери підтримують кілька основних способів опису кольору: ключові слова, rgb і hex.
 
-
 ```html
 <p class="text">
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
@@ -22,6 +21,7 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
   cumque fuga facere labore quo id necessitatibus quaerat rerum.
 </p>
 ```
+
 ```css
 .text {
   color: tomato;
@@ -119,7 +119,7 @@ p {
 }
 ```
 
-:::info[Увага]
+[Увага]
 Запам'ятовувати комбінації HEX-значень **не потрібно**, всі кольори є в макеті від дизайнера.
 :::
 

@@ -33,7 +33,7 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 
 Сучасний підхід – сайт, на якому користувач ніколи не переходить на інші HTML-сторінки. Інтерфейс, замість запиту HTML-документів з сервера, перемальовується на клієнті, на одній і тій самій сторінці, без перезавантаження.
 
-<Image src='/img/React/spa.jpg' alt='Single page application' />
+<Image src='/img/React/spa.png' alt='Single page application' />
 
 - Архітектура клієнт-сервер
 - При завантаженні сайту сервер завжди віддає стартову HTML-сторінку `index.html`

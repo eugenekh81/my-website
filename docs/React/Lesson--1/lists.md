@@ -99,4 +99,4 @@ const BookList = ({ books }) => (
 :::
 
 ## Додаткові матеріали
-Списки і ключі
+- [Списки і ключі](https://www.youtube.com/watch?v=WhI40vjAjU0)

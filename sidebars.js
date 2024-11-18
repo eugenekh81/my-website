@@ -1211,7 +1211,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Модуль 20: CRUD',
+              label: 'Модуль 21: CRUD',
               items: [
                 {
                   type: 'doc',
@@ -1222,12 +1222,86 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Модуль 20: Синтаксис async/await',
+              label: 'Модуль 22: Синтаксис async/await',
               items: [
                 {
                   type: 'doc',
-                  id: 'JS/Module--21/async-await',
+                  id: 'JS/Module--22/async-await',
                   label: 'Асинхронні функції',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'React',
+          link: { type: 'doc', id: 'React/intro' },
+          items: [
+            {
+              type: 'category',
+              label: 'Знайомство з React',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--1/web-apps',
+                  label: 'Веб-застосунки',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--1/react',
+                  label: 'Бібліотека React',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--1/tools',
+                  label: 'Інструменти',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--1/jsx',
+                  label: 'JSX',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--1/components',
+                  label: 'Компоненти',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--1/conditions',
+                  label: 'Рендер за умовою',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--1/lists',
+                  label: 'Списки',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Стилізація',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--2/inline-styles',
+                  label: 'Вбудовані стилі',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--2/vanilla-css',
+                  label: 'Ванільний CSS',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--2/css-modules',
+                  label: 'CSS-модулі',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--2/reset',
+                  label: 'Нормалізація стилів',
                 },
               ],
             },

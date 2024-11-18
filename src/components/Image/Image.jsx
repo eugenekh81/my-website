@@ -1,6 +1,12 @@
 import React from 'react';
 
-export const Image = ({ src, alt = '' }) => {
+export const Image = ({
+  src,
+  alt = '',
+  width = '100%',
+  height = 'auto',
+  maxWidth = 640,
+}) => {
   return (
     <p align='center'>
       <img
@@ -8,9 +14,10 @@ export const Image = ({ src, alt = '' }) => {
         loading='lazy'
         style={{
           display: 'block',
-          maxWidth: '640px',
+          maxWidth: `${maxWidth}px`,
           margin: 'auto',
-          width: '100%',
+          width,
+          height,
         }}
         alt={alt}
       />

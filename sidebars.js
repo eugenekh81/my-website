@@ -1305,6 +1305,42 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'category',
+              label: 'Події та стан',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--3/classes',
+                  label: 'Компоненти-класи',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--3/events',
+                  label: 'Події',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--3/state',
+                  label: 'Внутрішній стан компонента',
+                },
+              ],
+            },
+            {
+              type: 'doc',
+              label: 'Форми',
+              id: 'React/Lesson--4/forms',
+            },
+            {
+              type: 'doc',
+              label: 'Життєвий цикли',
+              id: 'React/Lesson--5/lifecycle',
+            },
+            {
+              type: 'doc',
+              label: 'HTTP-запити',
+              id: 'React/Lesson--6/http',
+            },
           ],
         },
       ],

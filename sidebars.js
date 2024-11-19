@@ -1200,7 +1200,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Модуль 19: Пагінація',
+              label: 'Модуль 20: Пагінація',
               items: [
                 {
                   type: 'doc',

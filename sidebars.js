@@ -1341,6 +1341,53 @@ const sidebars = {
               label: 'HTTP-запити',
               id: 'React/Lesson--6/http',
             },
+            {
+              type: 'category',
+              label: 'React хуки',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--7/intro',
+                  label: 'Вступ',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--7/use-state',
+                  label: 'Хук useState',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--7/use-effect',
+                  label: 'Хук useEffect',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--7/custom-hooks',
+                  label: 'Власні хуки',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Контекст та рефи',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--8/context',
+                  label: 'Контекст та useContext',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--8/use-ref',
+                  label: 'Хук useRef',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--8/use-memo',
+                  label: 'Хук useMemo',
+                },
+              ],
+            },
           ],
         },
       ],

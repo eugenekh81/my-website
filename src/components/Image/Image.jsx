@@ -6,6 +6,7 @@ export const Image = ({
   width = '100%',
   height = 'auto',
   maxWidth = 640,
+  maxHeight = 'auto',
 }) => {
   return (
     <p align='center'>
@@ -15,10 +16,13 @@ export const Image = ({
         style={{
           display: 'block',
           maxWidth: `${maxWidth}px`,
+          maxHeight: `${maxHeight}px`,
           margin: 'auto',
-          width,
-          height,
+          width: `${width}px`,
+          height: `${height}px`,
         }}
+        width={`${width}`}
+        height={`${height}`}
         alt={alt}
       />
     </p>

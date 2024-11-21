@@ -1441,12 +1441,65 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'React/Lesson--10/location',
-                  label: 'Об\'єкт місцезнаходження',
+                  label: "Об'єкт місцезнаходження",
                 },
                 {
                   type: 'doc',
                   id: 'React/Lesson--10/code-splitting',
                   label: 'Розділення коду',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Redux',
+          link: { type: 'doc', id: 'Redux/intro' },
+          items: [
+            {
+              type: 'category',
+              label: 'Знайомство з Redux',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--1/intro',
+                  label: 'Управління станом',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--1/example-app',
+                  label: 'Планувальник завдань',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--1/install',
+                  label: 'Встановлення',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--1/store',
+                  label: 'Стор (store)',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--1/devtools',
+                  label: 'Redux DevTools',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--1/selectors',
+                  label: 'Підписка на стор',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--1/actions',
+                  label: 'Екшени (actions)',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--1/reducers',
+                  label: 'Редюсери (reducers)',
                 },
               ],
             },

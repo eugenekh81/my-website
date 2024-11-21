@@ -1388,6 +1388,68 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'category',
+              label: 'Маршрутизація частина 1',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--9/routing',
+                  label: 'Маршрутизація',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--9/router',
+                  label: 'Компонент <BrowserRouter>',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--9/links',
+                  label: 'Компоненти <Link> та <NavLink>',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--9/url-params',
+                  label: 'URL-параметри',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--9/nested-routes',
+                  label: 'Вкладені маршрути',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--9/index-routes',
+                  label: 'Індексні маршрути',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Маршрутизація частина 2',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--10/navigation',
+                  label: 'Навігація',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--10/query-string',
+                  label: 'Рядок запиту',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--10/location',
+                  label: 'Об\'єкт місцезнаходження',
+                },
+                {
+                  type: 'doc',
+                  id: 'React/Lesson--10/code-splitting',
+                  label: 'Розділення коду',
+                },
+              ],
+            },
           ],
         },
       ],

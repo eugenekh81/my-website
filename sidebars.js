@@ -1503,6 +1503,38 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'category',
+              label: 'Redux Toolkit',
+              link: { type: 'doc', id: 'Redux/Lesson--2/intro' },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--2/install',
+                  label: 'Встановлення',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--2/store',
+                  label: 'configureStore',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--2/actions',
+                  label: 'createAction',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--2/reducers',
+                  label: 'createReducer',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--2/slices',
+                  label: 'createSlice',
+                },
+              ],
+            },
           ],
         },
       ],

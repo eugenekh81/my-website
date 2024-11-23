@@ -1535,6 +1535,32 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'category',
+              label: 'Асинхронний Redux',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--3/intro',
+                  label: 'Асинхронні операції',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--3/thunks',
+                  label: 'Операції',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--3/rtk-thunks',
+                  label: 'createAsyncThunk',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--3/example-app',
+                  label: 'Планувальник завдань',
+                },
+              ],
+            },
           ],
         },
       ],

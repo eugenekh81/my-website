@@ -1561,6 +1561,32 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'category',
+              label: 'Оптимізація селекторів',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--4/selectors',
+                  label: 'Селектори',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--4/naming',
+                  label: 'Найменування',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--4/compound',
+                  label: 'Складові селектори',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--4/reselect',
+                  label: 'Оптимізація',
+                },
+              ],
+            },
           ],
         },
       ],

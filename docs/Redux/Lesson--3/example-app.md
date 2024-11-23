@@ -17,26 +17,27 @@ import { CustomTOC } from '@site/src/components/CustomTOC';
 <CP src='https://codesandbox.io/embed/goit-react-textbook-lesson-13-redux-toolkit-app-starter-code-0rmpkl?fontsize=14&hidenavigation=1&theme=dark' />
 
 ## Селектори
+
 Через те, що у нас змінилася форма стану, необхідно доповнити файл селекторів.
 
 ```jsx title="src/redux/selectors.js" showLineNumbers
-export const getTasks = state => state.tasks.items;
+export const getTasks = (state) => state.tasks.items;
 
-export const getIsLoading = state => state.tasks.isLoading;
+export const getIsLoading = (state) => state.tasks.isLoading;
 
-export const getError = state => state.tasks.error;
+export const getError = (state) => state.tasks.error;
 
-export const getStatusFilter = state => state.filters.status;
+export const getStatusFilter = (state) => state.filters.status;
 ```
 
 ## Читання завдань
 
-Операція та редюсери для читання масиву завдань у нас уже є. Доповнимо компонент App так, щоб при його монтуванні запускалася операція запиту за списком задач.
+Операція та редюсери для читання масиву завдань у нас уже є. Доповнимо компонент `App` так, щоб при його монтуванні запускалася операція запиту за списком задач.
 
 ```jsx title="src/components/App.js" showLineNumbers
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { fetchTasks } from "redux/operations";
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchTasks } from 'redux/operations';
 // Імпорти компонентів
 
 export const App = () => {
@@ -63,10 +64,10 @@ export const App = () => {
 Додамо відображення індикатора запиту над списком завдань.
 
 ```jsx title="src/components/App.js" showLineNumbers
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchTasks } from "redux/operations";
-import { getError, getIsLoading } from "redux/selectors";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchTasks } from 'redux/operations';
+import { getError, getIsLoading } from 'redux/selectors';
 // Імпорти компонентів
 
 export const App = () => {
@@ -90,14 +91,15 @@ export const App = () => {
 ```
 
 ## Додавання завдання
+
 Оголосимо операцію додавання задачі, яка очікує тільки введений текст користувачем. За створення унікального ідентифікатора та додавання властивості `completed` тепер відповідатиме бекенд.
 
 ```jsx title="src/redux/operations.js" showLineNumbers
 export const addTask = createAsyncThunk(
-  "tasks/addTask",
+  'tasks/addTask',
   async (text, thunkAPI) => {
     try {
-      const response = await axios.post("/tasks", { text });
+      const response = await axios.post('/tasks', { text });
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
@@ -109,13 +111,13 @@ export const addTask = createAsyncThunk(
 У компоненті `TaskForm` додаємо код запуску операції додавання завдання при сабміть форми.
 
 ```jsx title="src/components/TaskForm/TaskForm.js" showLineNumbers
-import { useDispatch } from "react-redux";
-import { addTask } from "redux/operations";
+import { useDispatch } from 'react-redux';
+import { addTask } from 'redux/operations';
 
 export const TaskForm = () => {
   const dispatch = useDispatch();
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
     dispatch(addTask(event.target.elements.text.value));
@@ -129,13 +131,13 @@ export const TaskForm = () => {
 Додамо в слайс `tasksSlice` код обробки екшенів додавання завдання.
 
 ```jsx title="src/redux/tasksSlice.js" showLineNumbers
-import { createSlice } from "@reduxjs/toolkit";
-import { fetchTasks, addTask } from "./operations";
+import { createSlice } from '@reduxjs/toolkit';
+import { fetchTasks, addTask } from './operations';
 
 const tasksSlice = createSlice({
-  extraReducers: builder => {
+  extraReducers: (builder) => {
     builder
-      .addCase(addTask.pending, state => {
+      .addCase(addTask.pending, (state) => {
         state.isLoading = true;
       })
       .addCase(addTask.fulfilled, (state, action) => {
@@ -158,7 +160,7 @@ const tasksSlice = createSlice({
 
 ```jsx title="src/redux/operations.js" showLineNumbers
 export const deleteTask = createAsyncThunk(
-  "tasks/deleteTask",
+  'tasks/deleteTask',
   async (taskId, thunkAPI) => {
     try {
       const response = await axios.delete(`/tasks/${taskId}`);
@@ -173,9 +175,9 @@ export const deleteTask = createAsyncThunk(
 У компоненті `Task` додаємо код запуску операції видалення завдання при натисканні на кнопку видалення, і передаємо їй ідентифікатор.
 
 ```jsx title="src/components/Task/Task.js" showLineNumbers
-import { useDispatch } from "react-redux";
-import { MdClose } from "react-icons/md";
-import { deleteTask } from "redux/operations";
+import { useDispatch } from 'react-redux';
+import { MdClose } from 'react-icons/md';
+import { deleteTask } from 'redux/operations';
 
 export const Task = ({ task }) => {
   const dispatch = useDispatch();
@@ -184,7 +186,7 @@ export const Task = ({ task }) => {
 
   return (
     <div>
-      <input type="checkbox" checked={task.completed} />
+      <input type='checkbox' checked={task.completed} />
       <p>{task.text}</p>
       <button onClick={handleDelete}>
         <MdClose size={24} />
@@ -197,20 +199,20 @@ export const Task = ({ task }) => {
 Додамо в слайс `tasksSlice` код обробки екшенів видалення завдання.
 
 ```jsx title="src/redux/tasksSlice.js" showLineNumbers
-import { createSlice } from "@reduxjs/toolkit";
-import { fetchTasks, addTask, deleteTask } from "./operations";
+import { createSlice } from '@reduxjs/toolkit';
+import { fetchTasks, addTask, deleteTask } from './operations';
 
 const tasksSlice = createSlice({
-  extraReducers: builder => {
+  extraReducers: (builder) => {
     builder
-      .addCase(deleteTask.pending, state => {
+      .addCase(deleteTask.pending, (state) => {
         state.isLoading = true;
       })
       .addCase(deleteTask.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
         const index = state.items.findIndex(
-          task => task.id === action.payload.id
+          (task) => task.id === action.payload.id
         );
         state.items.splice(index, 1);
       })
@@ -231,7 +233,7 @@ export const tasksReducer = tasksSlice.reducer;
 
 ```jsx title="src/redux/operations.js" showLineNumbers
 export const toggleCompleted = createAsyncThunk(
-  "tasks/toggleCompleted",
+  'tasks/toggleCompleted',
   async (task, thunkAPI) => {
     try {
       const response = await axios.put(`/tasks/${task.id}`, {
@@ -244,12 +246,13 @@ export const toggleCompleted = createAsyncThunk(
   }
 );
 ```
+
 У компоненті `Task` додаємо код запуску операції зміни статусу під час кліку по чекбоксу, і передаємо їй весь об'єкт завдання.
 
 ```jsx title="src/components/TaskForm/TaskForm.js" showLineNumbers
-import { useDispatch } from "react-redux";
-import { MdClose } from "react-icons/md";
-import { deleteTask, toggleCompleted } from "redux/operations";
+import { useDispatch } from 'react-redux';
+import { MdClose } from 'react-icons/md';
+import { deleteTask, toggleCompleted } from 'redux/operations';
 
 export const Task = ({ task }) => {
   const dispatch = useDispatch();
@@ -260,7 +263,7 @@ export const Task = ({ task }) => {
 
   return (
     <div>
-      <input type="checkbox" checked={task.completed} onChange={handleToggle} />
+      <input type='checkbox' checked={task.completed} onChange={handleToggle} />
       <p>{task.text}</p>
       <button onClick={handleDelete}>
         <MdClose size={24} />
@@ -273,20 +276,20 @@ export const Task = ({ task }) => {
 Додамо в слайс `tasksSlice` код обробки екшенів зміни статусу завдання.
 
 ```jsx title="src/redux/tasksSlice.js" showLineNumbers
-import { createSlice } from "@reduxjs/toolkit";
-import { fetchTasks, addTask, deleteTask, toggleCompleted } from "./operations";
+import { createSlice } from '@reduxjs/toolkit';
+import { fetchTasks, addTask, deleteTask, toggleCompleted } from './operations';
 
 const tasksSlice = createSlice({
-  extraReducers: builder => {
+  extraReducers: (builder) => {
     builder
-      .addCase(toggleCompleted.pending, state => {
+      .addCase(toggleCompleted.pending, (state) => {
         state.isLoading = true;
       })
       .addCase(toggleCompleted.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
         const index = state.items.findIndex(
-          task => task.id === action.payload.id
+          (task) => task.id === action.payload.id
         );
         state.items.splice(index, 1, action.payload);
       })
@@ -302,10 +305,11 @@ export const tasksReducer = tasksSlice.reducer;
 ```
 
 ## Скорочуємо код редюсерів
+
 Ви напевно вже звернули увагу на те, що код редюсерів, які обробляють `pending` та `rejected` екшени всіх операцій, ідентичний. Винесемо логіку цих редюсерів у функції, що допоможе нам скоротити дублювання коду.
 
 ```jsx title="src/redux/tasksSlice.js" showLineNumbers
-const handlePending = state => {
+const handlePending = (state) => {
   state.isLoading = true;
 };
 
@@ -315,13 +319,13 @@ const handleRejected = (state, action) => {
 };
 
 const tasksSlice = createSlice({
-  name: "tasks",
+  name: 'tasks',
   initialState: {
     items: [],
     isLoading: false,
     error: null,
   },
-  extraReducers: builder => {
+  extraReducers: (builder) => {
     builder
       .addCase(fetchTasks.pending, handlePending)
       .addCase(fetchTasks.fulfilled, (state, action) => {
@@ -342,7 +346,7 @@ const tasksSlice = createSlice({
         state.isLoading = false;
         state.error = null;
         const index = state.items.findIndex(
-          task => task.id === action.payload.id
+          (task) => task.id === action.payload.id
         );
         state.items.splice(index, 1);
       })
@@ -352,7 +356,7 @@ const tasksSlice = createSlice({
         state.isLoading = false;
         state.error = null;
         const index = state.items.findIndex(
-          task => task.id === action.payload.id
+          (task) => task.id === action.payload.id
         );
         state.items.splice(index, 1, action.payload);
       })
@@ -364,6 +368,7 @@ export const tasksReducer = tasksSlice.reducer;
 ```
 
 ## Фінальний код
+
 Розберіть код живого прикладу, в якому використовується весь пройдений матеріал.
 
 <CP src='https://codesandbox.io/embed/goit-react-textbook-lesson-13-redux-toolkit-app-final-code-q4v1pb?fontsize=14&hidenavigation=1&theme=dark' />

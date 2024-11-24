@@ -1450,6 +1450,11 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'doc',
+              id: 'React/Lesson--11/portals',
+
+            },
           ],
         },
         {
@@ -1584,6 +1589,32 @@ const sidebars = {
                   type: 'doc',
                   id: 'Redux/Lesson--4/reselect',
                   label: 'Оптимізація',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Користувачі',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--5/users',
+                  label: 'Облікові записи',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--5/auth',
+                  label: 'Права доступу',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--5/jwt',
+                  label: 'JSON Web Token',
+                },
+                {
+                  type: 'doc',
+                  id: 'Redux/Lesson--5/app',
+                  label: 'Планувальник завдань',
                 },
               ],
             },

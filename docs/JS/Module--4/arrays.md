@@ -37,7 +37,7 @@ console.log(clients[2]); // Ajax
 **Індексація елементів масиву починається з нуля.**
 :::
 
-<Image src='/img/JS/Module--2/indexes.jpg' alt='Індекси масивів'/>
+<Image src='/img/JS/indexes.jpg' alt='Індекси масивів'/>
 
 ## Перевизначення
 

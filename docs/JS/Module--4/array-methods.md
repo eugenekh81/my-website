@@ -96,11 +96,11 @@ if (hasFruit) {
 
 **Додають або видаляють крайні елементи масиву**. Працюють тільки з крайнім лівим і крайнім правим елементом, і не можуть вставити або видалити елемент з довільної позиції.
 
-<Image src='/img/JS/Module--2/arr-methods.jpg' alt='Методи масивів'/>
+<Image src='/img/JS/arr-methods.jpg' alt='Методи масивів'/>
 
 **Метод `push()` додає один або декілька елементів наприкінці масиву**, без необхідності зазначати індекси елементів, що додаються. **Повертає довжину масиву після додавання елементів**.
 
-<Image src='/img/JS/Module--2/push.png' alt='Метод push' />
+<Image src='/img/JS/push.png' alt='Метод push' />
 
 ```js
 const numbers = [];
@@ -134,7 +134,7 @@ console.log(numbers); // [1, 2, 3, 4, 5]
 
 **Метод `pop()` видаляє останній елемент з кінця масиву і повертає видалений елемент**. Якщо масив порожній, метод повертає `undefined`.
 
-<Image src='/img/JS/Module--2/pop.png' alt='Метод pop' />
+<Image src='/img/JS/pop.png' alt='Метод pop' />
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -159,7 +159,7 @@ console.log(numbers); // []
 
 **`slice(begin, end)` повертає новий масив, що містить копію частини вихідного масиву, не змінюючи його**. Копія створюється з `begin` і до, але не включно, `end` - індекси елементів вихідного масиву.
 
-<Image src='/img/JS/Module--2/slice.png' alt='Метод slice' />
+<Image src='/img/JS/slice.png' alt='Метод slice' />
 
 ```js
 const fruits = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
@@ -220,7 +220,7 @@ console.log(deletedScores); // [1, 2, 3]
 
 На зображенні показаний виклик методу `score.splice (0, 3)` з прикладу.
 
-<Image src='/img/JS/Module--2/splice-remove.png' alt='Метод splice' />
+<Image src='/img/JS/splice-remove.png' alt='Метод splice' />
 
 :::tip[цікаво]
 На практиці, значення, що повертається (масив видалених елементів), використовується рідко. Переважно, просто необхідно видалити елементи з масиву.
@@ -249,7 +249,7 @@ console.log(colors); // ["red", "green", "purple", "blue"]
 
 На малюнку показаний виклик методу `colors.splice(2, 0, 'purple')` з прикладу.
 
-<Image src='/img/JS/Module--2/splice-insert.png' alt='Метод splice' />
+<Image src='/img/JS/splice-insert.png' alt='Метод splice' />
 
 Можна додати довільну кількість елементів, передавши четвертий, п'ятий аргумент тощо.
 
@@ -288,7 +288,7 @@ console.log(languages); // ["C", "Python", "C#", "Swift", "Go", "JavaScript"]
 
 На зображенні показаний виклик методу `languages.splice(1, 1, 'Python')` з прикладу.
 
-<Image src='/img/JS/Module--2/splice-replace.png' alt='Метод splice' />
+<Image src='/img/JS/splice-replace.png' alt='Метод splice' />
 
 ## Метод `concat()`​
 
@@ -307,4 +307,3 @@ console.log(allClientsWithNewFirst); // ['Apple', 'Pineapple', 'Mango', 'Orange'
 console.log(oldFruits); // ['Mango', 'Orange', 'Banana', 'Kiwi']
 console.log(newFruits); // ['Apple', 'Pineapple']
 ```
-
